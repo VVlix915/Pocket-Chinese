@@ -1,0 +1,27 @@
+# Temporary files
+*.tmp
+*.temp
+*_temp.js
+*_backup.js
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node modules (if added in future)
+node_modules/
+package-lock.json
+
+# Build artifacts (if added in future)
+dist/
+build/
+
+# Logs
+*.log
