@@ -117,7 +117,7 @@ const recipes = [
             en: 'Classic home-style dish, sweet and sour, nutritious'
         },
         image: '番茄炒蛋封面.jpg',
-        video: 'videos/番茄炒蛋.mp4',
+        video: '番茄炒蛋.mp4',
         difficulty: 'beginner',
         time: '15分钟 / 15 min',
         servings: '2人份 / 2 servings',
@@ -518,7 +518,7 @@ const recipes = [
             en: 'Refreshing and appetizing, simple to make, summer essential'
         },
         image: '凉拌黄瓜封面.jpg',
-        video: 'videos/凉拌黄瓜2.mp4',
+        video: '凉拌黄瓜2.mp4',
         difficulty: 'beginner',
         time: '10分钟 / 10 min',
         servings: '2人份 / 2 servings',
@@ -627,7 +627,7 @@ const recipes = [
             en: 'Sweet and sour, bright red color, loved by all ages'
         },
         image: '糖醋排骨封面.jpg',
-        video: 'videos/糖醋排骨更新版.mp4',
+        video: '糖醋排骨更新版.mp4',
         difficulty: 'intermediate',
         time: '45分钟 / 45 min',
         servings: '3人份 / 3 servings',
