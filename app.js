@@ -4,7 +4,8 @@ const translations = {
             home: '首页',
             scenarios: '场景分类',
             recipes: '菜谱大全',
-            culture: '文化故事'
+            culture: '文化故事',
+            community: '用户分享'
         },
         hero: {
             title: '探索中华美食文化',
@@ -28,6 +29,46 @@ const translations = {
             beginner: {
                 title: '初学者友好',
                 description: '从零开始，轻松入门中餐烹饪'
+            },
+            vegetarian: {
+                title: '素食主义者的选择',
+                description: '健康美味，适合素食主义者的中餐'
+            },
+            springFestival: {
+                title: '春节',
+                description: '农历新年，团圆喜庆'
+            },
+            lanternFestival: {
+                title: '元宵节',
+                description: '正月十五，赏灯吃元宵'
+            },
+            dragonBoatFestival: {
+                title: '端午节',
+                description: '五月初五，赛龙舟吃粽子'
+            },
+            midAutumnFestival: {
+                title: '中秋节',
+                description: '八月十五，赏月吃月饼'
+            },
+            doubleNinthFestival: {
+                title: '重阳节',
+                description: '九月初九，登高赏秋'
+            },
+            qingmingFestival: {
+                title: '清明节',
+                description: '春暖花开，踏青祭祖'
+            },
+            winterSolstice: {
+                title: '冬至',
+                description: '冬至大如年，饺子汤圆'
+            },
+            wedding: {
+                title: '婚宴/寿宴',
+                description: '喜结连理，宴席必备'
+            },
+            birthday: {
+                title: '生日会',
+                description: '生日快乐，长寿面必备'
             }
         },
         recipes: {
@@ -44,8 +85,24 @@ const translations = {
             steps: '制作步骤',
             culture: '文化链接',
             substitution: '替代方案',
+            substitutionGuide: '食材替代指南',
+            substitutionGuideDesc: '以下是本菜品中可替代的食材，帮助您在海外更好地制作中餐：',
             video: '视频教程',
             back: '返回列表'
+        },
+        community: {
+            title: '用户分享社区',
+            subtitle: '分享您的美食作品，与大家交流心得',
+            shareButton: '分享我的作品',
+            uploadImage: '上传图片',
+            writeCaption: '写下您的分享...',
+            postButton: '发布',
+            noPosts: '暂无分享，快来发布第一条吧！',
+            like: '点赞',
+            comment: '评论',
+            share: '分享',
+            likes: '点赞',
+            comments: '评论'
         },
         footer: {
             text: '© 2026 中华美食 | 连接中西饮食文化'
@@ -56,7 +113,8 @@ const translations = {
             home: 'Home',
             scenarios: 'Scenarios',
             recipes: 'Recipes',
-            culture: 'Culture'
+            culture: 'Culture',
+            community: 'Community'
         },
         hero: {
             title: 'Explore Chinese Cuisine',
@@ -80,6 +138,46 @@ const translations = {
             beginner: {
                 title: 'Beginner Friendly',
                 description: 'Start from scratch with easy-to-follow recipes'
+            },
+            vegetarian: {
+                title: 'Vegetarian Choices',
+                description: 'Healthy and delicious Chinese dishes for vegetarians'
+            },
+            springFestival: {
+                title: 'Spring Festival',
+                description: 'Lunar New Year, reunion and celebration'
+            },
+            lanternFestival: {
+                title: 'Lantern Festival',
+                description: '15th of first lunar month, lantern viewing and yuanxiao'
+            },
+            dragonBoatFestival: {
+                title: 'Dragon Boat Festival',
+                description: '5th day of 5th lunar month, dragon boat racing and zongzi'
+            },
+            midAutumnFestival: {
+                title: 'Mid-Autumn Festival',
+                description: '15th of 8th lunar month, moon viewing and mooncakes'
+            },
+            doubleNinthFestival: {
+                title: 'Double Ninth Festival',
+                description: '9th day of 9th lunar month, climbing heights and autumn viewing'
+            },
+            qingmingFestival: {
+                title: 'Qingming Festival',
+                description: 'Spring flowers blooming, outing and ancestor worship'
+            },
+            winterSolstice: {
+                title: 'Winter Solstice',
+                description: 'Winter solstice as important as New Year, dumplings and tangyuan'
+            },
+            wedding: {
+                title: 'Wedding/Birthday Banquet',
+                description: 'Happy union, essential banquet dishes'
+            },
+            birthday: {
+                title: 'Birthday Party',
+                description: 'Happy birthday, longevity noodles essential'
             }
         },
         recipes: {
@@ -96,8 +194,24 @@ const translations = {
             steps: 'Cooking Steps',
             culture: 'Cultural Link',
             substitution: 'Substitution',
+            substitutionGuide: 'Ingredient Substitution Guide',
+            substitutionGuideDesc: 'Here are the ingredient substitutions for this dish to help you cook Chinese food better overseas:',
             video: 'Video Tutorial',
             back: 'Back to List'
+        },
+        community: {
+            title: 'Community Sharing',
+            subtitle: 'Share your culinary creations and exchange ideas with others',
+            shareButton: 'Share My Creation',
+            uploadImage: 'Upload Image',
+            writeCaption: 'Write your sharing...',
+            postButton: 'Post',
+            noPosts: 'No posts yet, be the first to share!',
+            like: 'Like',
+            comment: 'Comment',
+            share: 'Share',
+            likes: 'Likes',
+            comments: 'Comments'
         },
         footer: {
             text: '© 2026 Chinese Cuisine | Bridging Eastern and Western Culinary Cultures'
@@ -117,40 +231,41 @@ const recipes = [
             en: 'Classic home-style dish, sweet and sour, nutritious'
         },
         image: '番茄炒蛋封面.jpg',
-        video: '番茄炒蛋.mp4',
+        video: 'videos/番茄炒蛋.mp4',
         difficulty: 'beginner',
+        spiciness: 0,
         time: '15分钟 / 15 min',
-        servings: '2人份 / 2 servings',
+        servings: '1人份 / 1 servings',
         scenario: ['student', 'beginner'],
         ingredients: [
             {
                 name: { zh: '鸡蛋', en: 'Eggs' },
-                amount: '3个 / 3 eggs',
+                amount: '2个 / 2 eggs',
                 substitution: null
             },
             {
                 name: { zh: '西红柿', en: 'Tomatoes' },
-                amount: '2个中等大小 / 2 medium',
+                amount: '1个中等大小 / 1 medium',
                 substitution: { zh: '可用番茄罐头代替', en: 'Canned tomatoes can be used' }
             },
             {
                 name: { zh: '葱', en: 'Green onions' },
-                amount: '1根 / 1 stalk',
+                amount: '1/2根 / 1/2 stalk',
                 substitution: { zh: '可用洋葱代替', en: 'Onion can be substituted' }
             },
             {
                 name: { zh: '盐', en: 'Salt' },
-                amount: '1茶匙 / 1 tsp',
+                amount: '1/2茶匙(约1克) / 1/2 tsp (about 1g)',
                 substitution: null
             },
             {
                 name: { zh: '糖', en: 'Sugar' },
-                amount: '1茶匙 / 1 tsp',
+                amount: '1/2茶匙(约1克) / 1/2 tsp (about 1g)',
                 substitution: null
             },
             {
                 name: { zh: '食用油', en: 'Cooking oil' },
-                amount: '2汤匙 / 2 tbsp',
+                amount: '1汤匙 / 1 tbsp',
                 substitution: null
             }
         ],
@@ -206,43 +321,44 @@ const recipes = [
         },
         image: '宫保鸡丁封面.jpg',
         difficulty: 'intermediate',
+        spiciness: 1,
         time: '25分钟 / 25 min',
-        servings: '3人份 / 3 servings',
+        servings: '1人份 / 1 servings',
         scenario: 'student',
         ingredients: [
             {
                 name: { zh: '鸡胸肉', en: 'Chicken breast' },
-                amount: '300克 / 300g',
+                amount: '100克 / 100g',
                 substitution: null
             },
             {
                 name: { zh: '花生米', en: 'Peanuts' },
-                amount: '50克 / 50g',
+                amount: '20克 / 20g',
                 substitution: { zh: '可用杏仁或腰果代替', en: 'Almonds or cashews can be substituted' }
             },
             {
                 name: { zh: '干辣椒', en: 'Dried chili peppers' },
-                amount: '6-8个 / 6-8 pieces',
+                amount: '2-3个 / 2-3 pieces',
                 substitution: { zh: '可用辣椒粉代替', en: 'Chili powder can be substituted' }
             },
             {
                 name: { zh: '蒜', en: 'Garlic' },
-                amount: '3瓣 / 3 cloves',
+                amount: '1瓣 / 1 clove',
                 substitution: null
             },
             {
                 name: { zh: '生抽', en: 'Light soy sauce' },
-                amount: '2汤匙 / 2 tbsp',
+                amount: '1茶匙 / 1 tsp',
                 substitution: { zh: '可用酱油代替', en: 'Regular soy sauce can be used' }
             },
             {
                 name: { zh: '醋', en: 'Vinegar' },
-                amount: '1汤匙 / 1 tbsp',
+                amount: '1茶匙 / 1 tsp',
                 substitution: null
             },
             {
                 name: { zh: '糖', en: 'Sugar' },
-                amount: '1茶匙 / 1 tsp',
+                amount: '1茶匙(约2克) / 1 tsp (about 2g)',
                 substitution: null
             }
         ],
@@ -305,43 +421,44 @@ const recipes = [
         },
         image: '红烧肉封面.jpg',
         difficulty: 'advanced',
+        spiciness: 0,
         time: '90分钟 / 90 min',
-        servings: '4人份 / 4 servings',
+        servings: '1人份 / 1 servings',
         scenario: 'student',
         ingredients: [
             {
                 name: { zh: '五花肉', en: 'Pork belly' },
-                amount: '500克 / 500g',
+                amount: '150克 / 150g',
                 substitution: null
             },
             {
                 name: { zh: '冰糖', en: 'Rock sugar' },
-                amount: '10克 / 10g',
+                amount: '3克 / 3g',
                 substitution: { zh: '可用白糖代替', en: 'White sugar can be substituted' }
             },
             {
                 name: { zh: '生抽', en: 'Light soy sauce' },
-                amount: '2汤匙 / 2 tbsp',
+                amount: '1茶匙 / 1 tsp',
                 substitution: null
             },
             {
                 name: { zh: '老抽', en: 'Dark soy sauce' },
-                amount: '1汤匙 / 1 tbsp',
+                amount: '1茶匙 / 1 tsp',
                 substitution: { zh: '可用更多生抽代替，实在没有可省略', en: 'More light soy sauce can be used, or omitted if not available' }
             },
             {
                 name: { zh: '料酒', en: 'Cooking wine' },
-                amount: '2汤匙 / 2 tbsp',
+                amount: '1茶匙 / 1 tsp',
                 substitution: { zh: '可用干白葡萄酒代替', en: 'Dry white wine can be substituted' }
             },
             {
                 name: { zh: '姜', en: 'Ginger' },
-                amount: '3片 / 3 slices',
+                amount: '1片 / 1 slice',
                 substitution: null
             },
             {
                 name: { zh: '八角', en: 'Star anise' },
-                amount: '2个 / 2 pieces',
+                amount: '1个 / 1 piece',
                 substitution: { zh: '可用五香粉代替', en: 'Five-spice powder can be substituted' }
             }
         ],
@@ -404,44 +521,45 @@ const recipes = [
         },
         image: '上汤娃娃菜封面.jpg',
         difficulty: 'intermediate',
+        spiciness: 0,
         time: '20分钟 / 20 min',
-        servings: '2人份 / 2 servings',
-        scenario: 'student',
+        servings: '1人份 / 1 servings',
+        scenario: ['student', 'vegetarian'],
         ingredients: [
             {
                 name: { zh: '娃娃菜', en: 'Baby cabbage' },
-                amount: '2颗 / 2 heads',
+                amount: '1颗 / 1 head',
                 substitution: { zh: '可用小白菜代替', en: 'Small bok choy can be substituted' }
             },
             {
                 name: { zh: '皮蛋', en: 'Preserved egg' },
-                amount: '1个 / 1 egg',
+                amount: '1/2个 / 1/2 egg',
                 substitution: { zh: '可省略', en: 'Can be omitted' }
             },
             {
                 name: { zh: '火腿', en: 'Ham' },
-                amount: '50克 / 50g',
+                amount: '25克 / 25g',
                 substitution: { zh: '可用培根代替', en: 'Bacon can be substituted' }
             },
             {
                 name: { zh: '蒜', en: 'Garlic' },
-                amount: '4瓣 / 4 cloves',
+                amount: '2瓣 / 2 cloves',
                 substitution: null
             },
             {
                 name: { zh: '高汤', en: 'Broth' },
-                amount: '300毫升 / 300ml',
+                amount: '150毫升 / 150ml',
                 substitution: { zh: '可用清水加鸡精代替', en: 'Water with chicken bouillon can be substituted' }
             },
             {
                 name: { zh: '盐', en: 'Salt' },
-                amount: '1/2茶匙 / 1/2 tsp',
+                amount: '1/2茶匙(约1克) / 1/2 tsp (about 1g)',
                 substitution: null
             },
             {
                 name: { zh: '香油', en: 'Sesame oil' },
-                amount: '1茶匙 / 1 tsp',
-                substitution: null
+                amount: '1/2茶匙(约1克) / 1/2 tsp (about 1g)',
+                substitution: { zh: '可用橄榄油或花生油代替', en: 'Olive oil or peanut oil can be substituted' }
             }
         ],
         steps: [
@@ -518,45 +636,46 @@ const recipes = [
             en: 'Refreshing and appetizing, simple to make, summer essential'
         },
         image: '凉拌黄瓜封面.jpg',
-        video: '凉拌黄瓜2.mp4',
+        video: 'videos/凉拌黄瓜2.mp4',
         difficulty: 'beginner',
+        spiciness: 0,
         time: '10分钟 / 10 min',
-        servings: '2人份 / 2 servings',
-        scenario: ['student', 'beginner'],
+        servings: '1人份 / 1 servings',
+        scenario: ['student', 'beginner', 'vegetarian'],
         ingredients: [
             {
                 name: { zh: '黄瓜', en: 'Cucumber' },
-                amount: '2根 / 2 cucumbers',
+                amount: '1根 / 1 cucumber',
                 substitution: { zh: '可用其他脆嫩蔬菜代替', en: 'Other crisp vegetables can be substituted' }
             },
             {
                 name: { zh: '蒜', en: 'Garlic' },
-                amount: '3瓣 / 3 cloves',
+                amount: '2瓣 / 2 cloves',
                 substitution: null
             },
             {
                 name: { zh: '生抽', en: 'Light soy sauce' },
-                amount: '2汤匙 / 2 tbsp',
+                amount: '1汤匙 / 1 tbsp',
                 substitution: { zh: '可用酱油代替', en: 'Soy sauce can be substituted' }
             },
             {
                 name: { zh: '陈醋', en: 'Aged vinegar' },
-                amount: '1汤匙 / 1 tbsp',
+                amount: '1/2汤匙 / 1/2 tbsp',
                 substitution: { zh: '可用米醋、白醋代替', en: 'Rice vinegar or white vinegar can be substituted' }
             },
             {
                 name: { zh: '香油', en: 'Sesame oil' },
-                amount: '1茶匙 / 1 tsp',
+                amount: '1/2茶匙(约1克) / 1/2 tsp (about 1g)',
                 substitution: { zh: '可用花生油代替', en: 'Peanut oil can be substituted' }
             },
             {
                 name: { zh: '盐', en: 'Salt' },
-                amount: '1/2茶匙 / 1/2 tsp',
+                amount: '1/4茶匙 / 1/4 tsp',
                 substitution: null
             },
             {
                 name: { zh: '糖', en: 'Sugar' },
-                amount: '1茶匙 / 1 tsp',
+                amount: '1/2茶匙(约1克) / 1/2 tsp (about 1g)',
                 substitution: null
             }
         ],
@@ -627,45 +746,46 @@ const recipes = [
             en: 'Sweet and sour, bright red color, loved by all ages'
         },
         image: '糖醋排骨封面.jpg',
-        video: '糖醋排骨更新版.mp4',
+        video: 'videos/糖醋排骨更新版.mp4',
         difficulty: 'intermediate',
+        spiciness: 0,
         time: '45分钟 / 45 min',
-        servings: '3人份 / 3 servings',
+        servings: '1人份 / 1 servings',
         scenario: ['festival', 'student'],
         ingredients: [
             {
                 name: { zh: '排骨', en: 'Pork ribs' },
-                amount: '400克 / 400g',
+                amount: '150克 / 150g',
                 substitution: null
             },
             {
                 name: { zh: '陈醋', en: 'Aged vinegar' },
-                amount: '3汤匙 / 3 tbsp',
+                amount: '1汤匙 / 1 tbsp',
                 substitution: { zh: '可用香醋、米醋代替，但陈醋味道最醇厚', en: 'Can use fragrant vinegar or rice vinegar, but aged vinegar has the richest flavor' }
             },
             {
                 name: { zh: '生抽', en: 'Light soy sauce' },
-                amount: '3汤匙 / 3 tbsp',
+                amount: '1汤匙 / 1 tbsp',
                 substitution: null
             },
             {
                 name: { zh: '老抽', en: 'Dark soy sauce' },
-                amount: '1汤匙 / 1 tbsp',
+                amount: '1/2汤匙 / 1/2 tbsp',
                 substitution: { zh: '可用更多生抽代替，实在没有可省略', en: 'More light soy sauce can be used, or omitted if not available' }
             },
             {
                 name: { zh: '冰糖', en: 'Rock sugar' },
-                amount: '10克 / 10g',
+                amount: '3克 / 3g',
                 substitution: { zh: '可用白糖代替', en: 'White sugar can be substituted' }
             },
             {
                 name: { zh: '盐', en: 'Salt' },
-                amount: '半勺 / 0.5 tsp',
+                amount: '1/4勺 / 1/4 tsp',
                 substitution: null
             },
             {
                 name: { zh: '姜', en: 'Ginger' },
-                amount: '3片 / 3 slices',
+                amount: '1片 / 1 slice',
                 substitution: null
             }
         ],
@@ -744,6 +864,102 @@ const recipes = [
     {
         id: 7,
         name: {
+            zh: '葱油面',
+            en: 'Scallion Oil Noodles'
+        },
+        description: {
+            zh: '简单快手，葱香浓郁，上海经典',
+            en: 'Simple and quick, rich scallion aroma, Shanghai classic'
+        },
+        image: '葱油面封面.jpg',
+        video: 'videos/葱油面.mp4',
+        difficulty: 'beginner',
+        spiciness: 0,
+        time: '15分钟 / 15 min',
+        servings: '1人份 / 1 servings',
+        scenario: ['student'],
+        ingredients: [
+            {
+                name: { zh: '小葱', en: 'Scallions' },
+                amount: '5根 / 5 stalks',
+                substitution: { zh: '可用大葱代替', en: 'Large green onions can be substituted' }
+            },
+            {
+                name: { zh: '面条', en: 'Noodles' },
+                amount: '100克 / 100g',
+                substitution: { zh: '可用挂面代替', en: 'Dried noodles can be used' }
+            },
+            {
+                name: { zh: '食用油', en: 'Cooking oil' },
+                amount: '3汤匙 / 3 tbsp',
+                substitution: { zh: '可用花生油或菜籽油', en: 'Peanut oil or canola oil can be used' }
+            },
+            {
+                name: { zh: '生抽', en: 'Light soy sauce' },
+                amount: '2汤匙 / 2 tbsp',
+                substitution: { zh: '可用酱油代替', en: 'Soy sauce can be substituted' }
+            },
+            {
+                name: { zh: '老抽', en: 'Dark soy sauce' },
+                amount: '1茶匙 / 1 tsp',
+                substitution: { zh: '可省略', en: 'Can be omitted' }
+            },
+            {
+                name: { zh: '糖', en: 'Sugar' },
+                amount: '1茶匙(约2克) / 1 tsp (about 2g)',
+                substitution: null
+            }
+        ],
+        steps: [
+            {
+                title: { zh: '准备小葱', en: 'Prepare Scallions' },
+                description: {
+                    zh: '将小葱洗净，切成5厘米长的段，葱白和葱绿分开。',
+                    en: 'Wash the scallions and cut into 5cm segments, separate white and green parts.'
+                },
+                time: '2分钟 / 2 min'
+            },
+            {
+                title: { zh: '炸葱油', en: 'Make Scallion Oil' },
+                description: {
+                    zh: '锅中倒入食用油，小火加热，先放入葱白，炸至微黄后加入葱绿，继续炸至焦黄关火。',
+                    en: 'Pour cooking oil into pan, heat over low heat. Add scallion whites first, fry until light yellow, then add scallion greens, continue frying until browned, then turn off heat.'
+                },
+                time: '8分钟 / 8 min'
+            },
+            {
+                title: { zh: '调酱汁', en: 'Make Sauce' },
+                description: {
+                    zh: '在炸好的葱油中加入生抽、老抽和糖，搅拌均匀。',
+                    en: 'Add light soy sauce, dark soy sauce, and sugar to the scallion oil, mix well.'
+                },
+                time: '1分钟 / 1 min'
+            },
+            {
+                title: { zh: '煮面条', en: 'Cook Noodles' },
+                description: {
+                    zh: '另起锅烧开水，放入面条煮熟，捞出沥干。',
+                    en: 'Bring water to boil in another pot, add noodles and cook until done, drain well.'
+                },
+                time: '5分钟 / 5 min'
+            },
+            {
+                title: { zh: '拌面', en: 'Mix Noodles' },
+                description: {
+                    zh: '将煮好的面条放入碗中，倒入调好的葱油酱汁，撒上炸好的葱段，拌匀即可。',
+                    en: 'Place cooked noodles in a bowl, pour over scallion oil sauce, top with fried scallions, and mix well.'
+                },
+                time: '1分钟 / 1 min'
+            }
+        ],
+        culture: {
+            zh: '葱油面是上海最具代表性的家常面食之一，也是许多上海人记忆中"妈妈的味道"。这道菜看似简单，却蕴含着上海人对美食的精致追求。关键在于炸葱油的火候——火太小，葱不出香味；火太大，葱容易焦苦。只有恰到好处的火候，才能炸出金黄酥脆、香气扑鼻的葱段。葱油面的魅力在于它的"简单而不简陋"。一碗热腾腾的面条，淋上浓郁的葱油，撒上酥脆的葱段，每一口都是满满的幸福感。在快节奏的现代生活中，葱油面因其制作简单、营养丰富，成为了许多独居者的首选。它不需要复杂的调料，也不需要高超的技巧，却能在最短的时间内温暖人心。对于留学生来说，葱油面更是一种慰藉——在异国他乡，一碗葱油面就能让人想起家的味道，想起妈妈在厨房忙碌的身影。',
+            en: 'Scallion Oil Noodles is one of the most representative home-style noodle dishes in Shanghai, and for many Shanghai people, it represents "the taste of mom." This dish may seem simple, but it embodies the Shanghai people\'s refined pursuit of food. The key lies in the heat control when frying the scallions—if the heat is too low, the scallions won\'t release their aroma; if too high, they\'ll burn and become bitter. Only with just the right heat can you achieve golden, crispy, and fragrant scallion segments. The charm of Scallion Oil Noodles lies in its "simplicity without being simplistic." A bowl of hot noodles, drizzled with rich scallion oil, topped with crispy scallion segments—every bite is full of happiness. In the fast-paced modern life, Scallion Oil Noodles has become a top choice for many people living alone because it\'s simple to make and nutritious. It doesn\'t require complex seasonings or high-level skills, yet it can warm people\'s hearts in the shortest time. For international students, Scallion Oil Noodles is even more of a comfort food—in a foreign land, a bowl of scallion oil noodles can evoke memories of home and the image of mom busy in the kitchen.'
+        }
+    },
+    {
+        id: 8,
+        name: {
             zh: '锅贴',
             en: 'Potstickers'
         },
@@ -753,6 +969,7 @@ const recipes = [
         },
         image: '锅贴封面.jpg',
         difficulty: 'intermediate',
+        spiciness: 0,
         time: '30分钟 / 30 min',
         servings: '4人份 / 4 servings',
         scenario: 'potluck',
@@ -836,6 +1053,7 @@ const recipes = [
         },
         image: '口水鸡封面.jpg',
         difficulty: 'intermediate',
+        spiciness: 1,
         time: '40分钟 / 40 min',
         servings: '4人份 / 4 servings',
         scenario: 'potluck',
@@ -853,7 +1071,7 @@ const recipes = [
             {
                 name: { zh: '花椒油', en: 'Sichuan pepper oil' },
                 amount: '1汤匙 / 1 tbsp',
-                substitution: null
+                substitution: { zh: '可用花椒粉代替', en: 'Sichuan pepper powder can be substituted' }
             },
             {
                 name: { zh: '生抽', en: 'Light soy sauce' },
@@ -914,9 +1132,10 @@ const recipes = [
         },
         image: '鱼香茄子封面.jpg',
         difficulty: 'intermediate',
+        spiciness: 1,
         time: '25分钟 / 25 min',
         servings: '3人份 / 3 servings',
-        scenario: 'potluck',
+        scenario: ['potluck', 'vegetarian'],
         ingredients: [
             {
                 name: { zh: '茄子', en: 'Eggplant' },
@@ -950,7 +1169,7 @@ const recipes = [
             },
             {
                 name: { zh: '糖', en: 'Sugar' },
-                amount: '1茶匙 / 1 tsp',
+                amount: '1茶匙(约2克) / 1 tsp (about 2g)',
                 substitution: null
             }
         ],
@@ -999,7 +1218,7 @@ const recipes = [
         difficulty: 'beginner',
         time: '5分钟 / 5 min',
         servings: '2人份 / 2 servings',
-        scenario: ['potluck', 'beginner'],
+        scenario: ['potluck', 'beginner', 'vegetarian'],
         ingredients: [
             {
                 name: { zh: '番茄', en: 'Tomatoes' },
@@ -1047,6 +1266,7 @@ const recipes = [
         },
         image: '蛋炒饭封面.jpg',
         difficulty: 'beginner',
+        spiciness: 0,
         time: '15分钟 / 15 min',
         servings: '2人份 / 2 servings',
         scenario: ['potluck', 'beginner'],
@@ -1068,7 +1288,7 @@ const recipes = [
             },
             {
                 name: { zh: '盐', en: 'Salt' },
-                amount: '1茶匙 / 1 tsp',
+                amount: '1茶匙(约2克) / 1 tsp (about 2g)',
                 substitution: null
             },
             {
@@ -1120,6 +1340,7 @@ const recipes = [
         },
         image: '麻婆豆腐封面.jpg',
         difficulty: 'intermediate',
+        spiciness: 2,
         time: '20分钟 / 20 min',
         servings: '3人份 / 3 servings',
         scenario: 'potluck',
@@ -1137,7 +1358,7 @@ const recipes = [
             {
                 name: { zh: '豆瓣酱', en: 'Pixian bean paste' },
                 amount: '1汤匙 / 1 tbsp',
-                substitution: null
+                substitution: { zh: '可用黄豆酱+辣椒酱代替', en: 'Can be substituted with yellow bean paste + chili paste' }
             },
             {
                 name: { zh: '蒜', en: 'Garlic' },
@@ -1151,7 +1372,7 @@ const recipes = [
             },
             {
                 name: { zh: '花椒粉', en: 'Sichuan pepper powder' },
-                amount: '1茶匙 / 1 tsp',
+                amount: '1茶匙(约2克) / 1 tsp (about 2g)',
                 substitution: null
             }
         ],
@@ -1200,7 +1421,7 @@ const recipes = [
         difficulty: 'intermediate',
         time: '30分钟 / 30 min',
         servings: '4人份 / 4 servings',
-        scenario: 'potluck',
+        scenario: ['potluck', 'vegetarian', 'springFestival'],
         ingredients: [
             {
                 name: { zh: '春卷皮', en: 'Spring roll wrappers' },
@@ -1210,7 +1431,7 @@ const recipes = [
             {
                 name: { zh: '猪肉末', en: 'Ground pork' },
                 amount: '200克 / 200g',
-                substitution: { zh: '可用鸡肉末代替', en: 'Ground chicken can be substituted' }
+                substitution: { zh: '可用鸡肉末或豆腐末代替', en: 'Ground chicken or tofu can be substituted' }
             },
             {
                 name: { zh: '白菜', en: 'Napa cabbage' },
@@ -1258,6 +1479,1428 @@ const recipes = [
             zh: '春卷是中国传统的节日食品，象征着春天的到来和新年的希望。春卷的历史悠久，最早可以追溯到东晋时期。春卷的馅料多样，常见的有猪肉白菜、韭菜鸡蛋等。在中国，春卷常作为春节等传统节日的必备食品，也是聚会时的热门小吃。',
             en: 'Spring Rolls are traditional festival food in China, symbolizing the arrival of spring and hope for the new year. Spring Rolls have a long history, dating back to the Eastern Jin Dynasty. Spring Rolls have various fillings, with pork and cabbage, chives and eggs being common. In China, Spring Rolls are often served as essential food during traditional festivals like Spring Festival, and are also popular snacks at gatherings.'
         }
+    },
+    {
+        id: 14,
+        name: {
+            zh: '饺子',
+            en: 'Dumplings'
+        },
+        description: {
+            zh: '北方春节必备，象征财富，形似元宝',
+            en: 'Essential for Northern Chinese Spring Festival, symbolizes wealth, shaped like ingots'
+        },
+        image: '饺子封面.jpg',
+        difficulty: 'intermediate',
+        spiciness: 0,
+        time: '60分钟 / 60 min',
+        servings: '4人份 / 4 servings',
+        scenario: 'springFestival',
+        ingredients: [
+            {
+                name: { zh: '猪肉末', en: 'Ground pork' },
+                amount: '500克 / 500g',
+                substitution: { zh: '可用牛肉末、鸡肉末或豆腐末代替', en: 'Ground beef, chicken, or tofu can be substituted' }
+            },
+            {
+                name: { zh: '饺子皮', en: 'Dumpling wrappers' },
+                amount: '50张 / 50 pieces',
+                substitution: null
+            },
+            {
+                name: { zh: '白菜', en: 'Napa cabbage' },
+                amount: '200克 / 200g',
+                substitution: null
+            },
+            {
+                name: { zh: '葱', en: 'Green onions' },
+                amount: '2根 / 2 pieces',
+                substitution: null
+            },
+            {
+                name: { zh: '姜', en: 'Ginger' },
+                amount: '1块 / 1 piece',
+                substitution: null
+            },
+            {
+                name: { zh: '生抽', en: 'Light soy sauce' },
+                amount: '2汤匙 / 2 tbsp',
+                substitution: null
+            },
+            {
+                name: { zh: '盐', en: 'Salt' },
+                amount: '1茶匙(约2克) / 1 tsp (about 2g)',
+                substitution: null
+            }
+        ],
+        steps: [
+            {
+                title: { zh: '准备馅料', en: 'Prepare Filling' },
+                description: {
+                    zh: '将白菜切碎，挤干水分。葱、姜切末。将所有食材混合，加入调料搅拌均匀。',
+                    en: 'Chop cabbage and squeeze out water. Mince green onions and ginger. Mix all ingredients, add seasonings and stir well.'
+                },
+                time: '20分钟 / 20 min'
+            },
+            {
+                title: { zh: '包饺子', en: 'Make Dumplings' },
+                description: {
+                    zh: '取一张饺子皮，放入适量馅料，对折捏紧边缘，形成月牙形。',
+                    en: 'Take a dumpling wrapper, add appropriate amount of filling, fold in half and pinch the edges tightly to form a crescent shape.'
+                },
+                time: '30分钟 / 30 min'
+            },
+            {
+                title: { zh: '煮饺子', en: 'Cook Dumplings' },
+                description: {
+                    zh: '锅中烧开水，放入饺子，水开后加三次冷水，饺子浮起即可。',
+                    en: 'Boil water in a pot, add dumplings, add cold water three times after water boils, dumplings are ready when they float.'
+                },
+                time: '10分钟 / 10 min'
+            }
+        ],
+        culture: {
+            zh: '饺子是中国北方春节的必备食品，象征着财富和好运。饺子的形状像古代的元宝，因此被认为能带来财运。在北方，除夕夜全家人围坐在一起包饺子是一项重要的传统活动，有些家庭还会在饺子里包入硬币、糖果等，象征着新的一年会有好运。饺子的历史悠久，最早可以追溯到东汉时期的张仲景。传说他用羊肉、辣椒和一些驱寒的药材包在面皮里，煮熟后分给穷人，治好了他们的冻耳朵。这就是饺子的起源，也是为什么饺子在北方被称为"扁食"或"煮角"。如今，饺子已经成为中国最受欢迎的传统食品之一，不仅在春节，在其他重要节日和家庭聚会上也经常出现。饺子的馅料多样，有猪肉白菜、韭菜鸡蛋、三鲜等多种口味，适应不同人的喜好。',
+            en: 'Dumplings are essential food for Northern Chinese Spring Festival, symbolizing wealth and good luck. The shape of dumplings resembles ancient Chinese ingots, so they are believed to bring financial fortune. In Northern China, the whole family gathering to make dumplings on New Year\'s Eve is an important traditional activity. Some families even wrap coins, candies, etc. in dumplings, symbolizing good luck in the new year. Dumplings have a long history, dating back to Zhang Zhongjing in the Eastern Han Dynasty. Legend has it that he wrapped mutton, chili peppers and some cold-dispelling medicinal herbs in dough, cooked them and distributed them to poor people, curing their frostbitten ears. This is the origin of dumplings, and why dumplings are called "bianshi" or "zhujiao" in Northern China. Today, dumplings have become one of the most popular traditional foods in China, not only during Spring Festival but also at other important festivals and family gatherings. Dumplings have various fillings, including pork and cabbage, chives and eggs, three delicacies, etc., to suit different people\'s preferences.'
+        }
+    },
+    {
+        id: 15,
+        name: {
+            zh: '年糕',
+            en: 'Rice Cake'
+        },
+        description: {
+            zh: '南方春节必备，象征年年高升',
+            en: 'Essential for Southern Chinese Spring Festival, symbolizes advancement year after year'
+        },
+        image: '年糕封面.jpg',
+        difficulty: 'intermediate',
+        spiciness: 0,
+        time: '40分钟 / 40 min',
+        servings: '4人份 / 4 servings',
+        scenario: 'springFestival',
+        ingredients: [
+            {
+                name: { zh: '糯米粉', en: 'Glutinous rice flour' },
+                amount: '500克 / 500g',
+                substitution: null
+            },
+            {
+                name: { zh: '白糖', en: 'White sugar' },
+                amount: '150克 / 150g',
+                substitution: null
+            },
+            {
+                name: { zh: '水', en: 'Water' },
+                amount: '300毫升 / 300ml',
+                substitution: null
+            },
+            {
+                name: { zh: '食用油', en: 'Cooking oil' },
+                amount: '2汤匙 / 2 tbsp',
+                substitution: null
+            }
+        ],
+        steps: [
+            {
+                title: { zh: '准备糯米糊', en: 'Prepare Glutinous Rice Batter' },
+                description: {
+                    zh: '将糯米粉、白糖混合，逐渐加入水，搅拌成均匀的糊状。',
+                    en: 'Mix glutinous rice flour and white sugar, gradually add water, stir into a uniform batter.'
+                },
+                time: '10分钟 / 10 min'
+            },
+            {
+                title: { zh: '蒸年糕', en: 'Steam Rice Cake' },
+                description: {
+                    zh: '容器刷油，倒入糯米糊，大火蒸30分钟，取出冷却。',
+                    en: 'Brush oil on container, pour in glutinous rice batter, steam over high heat for 30 minutes, remove and cool.'
+                },
+                time: '30分钟 / 30 min'
+            }
+        ],
+        culture: {
+            zh: '年糕是中国南方春节的必备食品，象征着"年年高升"。年糕的发音"年糕"与"年高"谐音，寓意着人们的生活和事业一年比一年好。在南方，特别是江浙沪一带，春节期间家家户户都会准备年糕，作为节日的重要食品。年糕的历史可以追溯到春秋战国时期，当时吴国大夫伍子胥为了防止越国入侵，在苏州城的城墙下埋了大量的糯米粉。后来越国果然入侵，苏州城被围困，城内粮食断绝，人们想起了伍子胥的话，挖开城墙，发现了糯米粉，于是用它做成了年糕，度过了难关。为了纪念伍子胥，苏州人每年都要做年糕。年糕的做法多样，有蒸、煮、炒、炸等多种方式。常见的有红糖年糕、白糖年糕、桂花年糕等。在南方，年糕不仅是春节的食品，也是日常的小吃，深受人们的喜爱。',
+            en: 'Rice Cake is essential food for Southern Chinese Spring Festival, symbolizing "advancement year after year". The pronunciation of "年糕" (rice cake) is homophonous with "年高" (yearly advancement) in Chinese, implying that people\'s lives and careers get better year by year. In Southern China, especially in Jiangsu, Zhejiang and Shanghai areas, every household prepares rice cakes during Spring Festival as an important festival food. The history of rice cakes can be traced back to the Spring and Autumn Period. At that time, Wu Zixu, a minister of the Wu State, buried a large amount of glutinous rice flour under the city wall of Suzhou to prevent invasion by the Yue State. Later, the Yue State indeed invaded, Suzhou City was besieged, and food in the city was exhausted. People remembered Wu Zixu\'s words, dug open the city wall, found the glutinous rice flour, made rice cakes with it, and survived the crisis. To commemorate Wu Zixu, Suzhou people make rice cakes every year. Rice cakes can be prepared in various ways, including steaming, boiling, stir-frying, and deep-frying. Common types include brown sugar rice cakes, white sugar rice cakes, and osmanthus rice cakes. In Southern China, rice cakes are not only Spring Festival food but also daily snacks, deeply loved by people.'
+        }
+    },
+    {
+        id: 16,
+        name: {
+            zh: '松鼠桂鱼',
+            en: 'Squirrel Mandarin Fish'
+        },
+        description: {
+            zh: '春节必备，象征年年有余',
+            en: 'Essential for Spring Festival, symbolizes surplus year after year'
+        },
+        image: '松鼠桂鱼封面.jpg',
+        difficulty: 'advanced',
+        spiciness: 0,
+        time: '40分钟 / 40 min',
+        servings: '4人份 / 4 servings',
+        scenario: 'springFestival',
+        ingredients: [
+            {
+                name: { zh: '桂鱼', en: 'Mandarin fish' },
+                amount: '1条(约1000克) / 1 piece (about 1000g)',
+                substitution: { zh: '可用草鱼、鲈鱼或鲤鱼代替', en: 'Grass carp, sea bass, or carp can be substituted' }
+            },
+            {
+                name: { zh: '面粉', en: 'Flour' },
+                amount: '100克 / 100g',
+                substitution: null
+            },
+            {
+                name: { zh: '鸡蛋', en: 'Egg' },
+                amount: '1个 / 1 piece',
+                substitution: null
+            },
+            {
+                name: { zh: '白糖', en: 'White sugar' },
+                amount: '50克 / 50g',
+                substitution: null
+            },
+            {
+                name: { zh: '醋', en: 'Vinegar' },
+                amount: '3汤匙 / 3 tbsp',
+                substitution: null
+            },
+            {
+                name: { zh: '生抽', en: 'Light soy sauce' },
+                amount: '2汤匙 / 2 tbsp',
+                substitution: null
+            },
+            {
+                name: { zh: '料酒', en: 'Cooking wine' },
+                amount: '2汤匙 / 2 tbsp',
+                substitution: null
+            }
+        ],
+        steps: [
+            {
+                title: { zh: '处理鱼', en: 'Prepare Fish' },
+                description: {
+                    zh: '鱼处理干净，在鱼身切花刀，用料酒、盐腌制15分钟。',
+                    en: 'Clean the fish, make diagonal cuts on the fish body, marinate with cooking wine and salt for 15 minutes.'
+                },
+                time: '15分钟 / 15 min'
+            },
+            {
+                title: { zh: '炸鱼', en: 'Fry Fish' },
+                description: {
+                    zh: '鸡蛋打散，鱼裹上面粉和蛋液，锅中倒油，烧至七成热，放入鱼炸至金黄酥脆。',
+                    en: 'Beat egg, coat fish with flour and egg liquid, heat oil in pan to 180°C, fry fish until golden and crispy.'
+                },
+                time: '15分钟 / 15 min'
+            },
+            {
+                title: { zh: '调糖醋汁', en: 'Prepare Sweet and Sour Sauce' },
+                description: {
+                    zh: '锅中留底油，放入白糖、醋、生抽，熬至浓稠，淋在鱼上即可。',
+                    en: 'Leave a little oil in the pan, add white sugar, vinegar, light soy sauce, simmer until thick, pour over the fish.'
+                },
+                time: '10分钟 / 10 min'
+            }
+        ],
+        culture: {
+            zh: '松鼠桂鱼是中国春节的传统名菜，象征着"年年有余"。鱼的发音"鱼"与"余"谐音，寓意着人们的生活富裕，年年有余粮。在春节期间，家家户户都会准备鱼，作为节日的重要菜肴。松鼠桂鱼的历史悠久，最早可以追溯到宋代。据《东京梦华录》记载，当时东京汴梁的酒楼就有糖醋鱼这道菜。明清时期，松鼠桂鱼成为宫廷名菜，深受皇室喜爱。松鼠桂鱼的做法多样，不同地区有不同的特色。北方的糖醋鱼多采用鲤鱼，南方则多采用草鱼或鲈鱼，而桂鱼因其肉质鲜嫩、刺少而深受喜爱。松鼠桂鱼的口味酸甜可口，鱼肉鲜嫩，是春节餐桌上的一道亮丽风景线。在一些地方，人们还会在鱼身上撒上香菜、葱花等，增加美感和香气。',
+            en: 'Squirrel Mandarin Fish is a traditional famous dish for Chinese Spring Festival, symbolizing "surplus year after year". The pronunciation of "鱼" (fish) is homophonous with "余" (surplus) in Chinese, implying that people\'s lives are wealthy with surplus grain every year. During Spring Festival, every household prepares fish as an important dish for the festival. Squirrel Mandarin Fish has a long history, dating back to the Song Dynasty. According to "Dongjing Meng Hua Lu" (Dreams of Splendor of the Eastern Capital), this dish was served in restaurants in Bianliang (present-day Kaifeng) at that time. During the Ming and Qing Dynasties, Squirrel Mandarin Fish became a court dish, deeply loved by the royal family. Squirrel Mandarin Fish has various preparation methods, with different characteristics in different regions. Northern China mostly uses carp, while Southern China mostly uses grass carp or sea bass. Mandarin fish is especially loved for its tender meat and few bones. Squirrel Mandarin Fish has a sweet and sour taste, with tender fish meat, and is a beautiful sight on the Spring Festival dining table. In some places, people also sprinkle cilantro, green onion, etc. on the fish to increase beauty and aroma.'
+        }
+    },
+    {
+        id: 17,
+        name: {
+            zh: '元宵',
+            en: 'Tangyuan'
+        },
+        description: {
+            zh: '糯米球，甜馅，象征团圆',
+            en: 'Glutinous rice balls with sweet filling, symbolizing reunion'
+        },
+        image: '元宵封面.jpg',
+        difficulty: 'intermediate',
+        spiciness: 0,
+        time: '45分钟 / 45 min',
+        servings: '4人份 / 4 servings',
+        scenario: 'lanternFestival',
+        ingredients: [
+            {
+                name: { zh: '糯米粉', en: 'Glutinous rice flour' },
+                amount: '300克 / 300g',
+                substitution: null
+            },
+            {
+                name: { zh: '黑芝麻', en: 'Black sesame' },
+                amount: '100克 / 100g',
+                substitution: { zh: '可用白芝麻代替', en: 'White sesame can be substituted' }
+            },
+            {
+                name: { zh: '白糖', en: 'White sugar' },
+                amount: '100克 / 100g',
+                substitution: null
+            },
+            {
+                name: { zh: '猪油', en: 'Lard' },
+                amount: '50克 / 50g',
+                substitution: { zh: '可用植物油代替', en: 'Vegetable oil can be substituted' }
+            },
+            {
+                name: { zh: '水', en: 'Water' },
+                amount: '适量 /适量',
+                substitution: null
+            }
+        ],
+        steps: [
+            {
+                title: { zh: '制作黑芝麻馅', en: 'Make Black Sesame Filling' },
+                description: {
+                    zh: '将黑芝麻炒香，碾碎，加入白糖、猪油拌匀，揉成小丸子。',
+                    en: 'Roast black sesame until fragrant, crush into powder, mix with white sugar and lard, knead into small balls.'
+                },
+                time: '15分钟 / 15 min'
+            },
+            {
+                title: { zh: '制作元宵', en: 'Make Tangyuan' },
+                description: {
+                    zh: '将糯米粉加水和成面团，分成小块，包入黑芝麻馅，搓成圆球。',
+                    en: 'Mix glutinous rice flour with water to form dough, divide into small pieces, wrap black sesame filling, roll into balls.'
+                },
+                time: '20分钟 / 20 min'
+            },
+            {
+                title: { zh: '煮元宵', en: 'Cook Tangyuan' },
+                description: {
+                    zh: '锅中烧开水，放入元宵，煮至浮起，再煮2-3分钟即可。',
+                    en: 'Boil water in a pot, add tangyuan, cook until they float, then cook for another 2-3 minutes.'
+                },
+                time: '10分钟 / 10 min'
+            }
+        ],
+        culture: {
+            zh: '元宵是中国元宵节的传统食品，象征着团圆和幸福。元宵的形状是圆的，寓意着团团圆圆，因此也被称为"汤圆"。在元宵节这天，家家户户都会吃元宵，祈求家人团聚，幸福美满。元宵的历史悠久，最早可以追溯到宋代。据《岁时广记》记载，当时人们在元宵节吃"圆子"，这就是元宵的前身。元宵的馅料多样，有芝麻、花生、豆沙、水果等多种口味。在北方，人们习惯在元宵节吃元宵，而在南方，人们则更习惯吃汤圆。虽然制作方法不同，但都象征着团圆和幸福。',
+            en: 'Tangyuan is a traditional food for Chinese Lantern Festival, symbolizing reunion and happiness. Tangyuan is round in shape, symbolizing reunion, so it is also called "汤圆" (round ball). On Lantern Festival, every household eats tangyuan, praying for family reunion and happiness. Tangyuan has a long history, dating back to the Song Dynasty. According to "Shi Shi Guang Ji", people ate "圆子" (round balls) during Lantern Festival at that time, which is the predecessor of tangyuan. Tangyuan has various fillings, including sesame, peanuts, red bean paste, fruits, etc. In Northern China, people are accustomed to eating yuanxiao during Lantern Festival, while in Southern China, people are more accustomed to eating tangyuan. Although the preparation methods are different, both symbolize reunion and happiness.'
+        }
+    },
+    {
+        id: 18,
+        name: {
+            zh: '咸味蛋黄肉粽',
+            en: 'Salty Egg Yolk Meat Zongzi'
+        },
+        description: {
+            zh: '糯米包裹咸蛋黄和猪肉，咸香可口',
+            en: 'Glutinous rice wrapped with salted egg yolk and pork, savory and delicious'
+        },
+        image: '咸味蛋黄肉粽封面.jpg',
+        difficulty: 'advanced',
+        spiciness: 0,
+        time: '120分钟 / 120 min',
+        servings: '6人份 / 6 servings',
+        scenario: 'dragonBoatFestival',
+        ingredients: [
+            {
+                name: { zh: '糯米', en: 'Glutinous rice' },
+                amount: '500克 / 500g',
+                substitution: null
+            },
+            {
+                name: { zh: '猪肉', en: 'Pork' },
+                amount: '300克 / 300g',
+                substitution: { zh: '可用牛肉代替', en: 'Beef can be substituted' }
+            },
+            {
+                name: { zh: '咸蛋黄', en: 'Salted egg yolk' },
+                amount: '6个 / 6 pieces',
+                substitution: null
+            },
+            {
+                name: { zh: '粽叶', en: 'Bamboo leaves' },
+                amount: '12张 / 12 pieces',
+                substitution: { zh: '可用芦苇叶代替', en: 'Reed leaves can be substituted' }
+            },
+            {
+                name: { zh: '生抽', en: 'Light soy sauce' },
+                amount: '2汤匙 / 2 tbsp',
+                substitution: null
+            },
+            {
+                name: { zh: '料酒', en: 'Cooking wine' },
+                amount: '2汤匙 / 2 tbsp',
+                substitution: null
+            }
+        ],
+        steps: [
+            {
+                title: { zh: '准备食材', en: 'Prepare Ingredients' },
+                description: {
+                    zh: '糯米提前浸泡2小时，猪肉切块用生抽、料酒腌制1小时。',
+                    en: 'Soak glutinous rice for 2 hours in advance, cut pork into pieces and marinate with light soy sauce and cooking wine for 1 hour.'
+                },
+                time: '120分钟 / 120 min'
+            },
+            {
+                title: { zh: '包粽子', en: 'Wrap Zongzi' },
+                description: {
+                    zh: '粽叶洗净烫软，将糯米、猪肉、咸蛋黄包入粽叶中，用绳子绑紧。',
+                    en: 'Wash and soften bamboo leaves, wrap glutinous rice, pork, and salted egg yolk in bamboo leaves, tie tightly with string.'
+                },
+                time: '30分钟 / 30 min'
+            },
+            {
+                title: { zh: '煮粽子', en: 'Cook Zongzi' },
+                description: {
+                    zh: '锅中加水，放入粽子，大火煮开后转小火煮2小时即可。',
+                    en: 'Add water to pot, add zongzi, bring to boil over high heat, then turn to low heat and cook for 2 hours.'
+                },
+                time: '120分钟 / 120 min'
+            }
+        ],
+        culture: {
+            zh: '粽子是端午节的传统食品，用糯米包裹馅料，纪念爱国诗人屈原。端午节吃粽子的习俗源于战国时期，传说屈原投江后，人们为了不让鱼虾伤害屈原的身体，纷纷将糯米投入江中。后来逐渐演变成用粽叶包裹糯米的粽子。粽子不仅纪念屈原，还注重驱邪和健康。古人认为粽叶有驱邪的作用，而糯米则有益健康。粽子的口味多样，南方偏爱咸味蛋黄肉粽，北方则喜欢甜味蜜枣豆沙粽。包粽子是重要的家庭活动，代代相传。',
+            en: 'Zongzi is a traditional food for Dragon Boat Festival, made by wrapping glutinous rice with fillings, commemorating the patriotic poet Qu Yuan. The custom of eating zongzi during Dragon Boat Festival originated from the Warring States period. Legend has it that after Qu Yuan threw himself into the river, people threw glutinous rice into the river to prevent fish and shrimp from harming his body. This gradually evolved into zongzi wrapped in bamboo leaves. Zongzi not only commemorates Qu Yuan but also emphasizes warding off evil and promoting health. Ancient people believed bamboo leaves had the power to ward off evil, while glutinous rice was beneficial for health. Zongzi comes in various flavors, with Southern China preferring salty egg yolk meat zongzi, while Northern China favors sweet date and red bean paste zongzi. Making zongzi is an important family activity passed down from generation to generation.'
+        }
+    },
+    {
+        id: 19,
+        name: {
+            zh: '甜味蜜枣豆沙粽',
+            en: 'Sweet Date and Red Bean Paste Zongzi'
+        },
+        description: {
+            zh: '糯米包裹蜜枣和豆沙，香甜软糯',
+            en: 'Glutinous rice wrapped with honey dates and red bean paste, sweet and soft'
+        },
+        image: '甜味蜜枣豆沙粽封面.jpg',
+        difficulty: 'advanced',
+        spiciness: 0,
+        time: '120分钟 / 120 min',
+        servings: '6人份 / 6 servings',
+        scenario: 'dragonBoatFestival',
+        ingredients: [
+            {
+                name: { zh: '糯米', en: 'Glutinous rice' },
+                amount: '500克 / 500g',
+                substitution: null
+            },
+            {
+                name: { zh: '蜜枣', en: 'Honey dates' },
+                amount: '12个 / 12 pieces',
+                substitution: { zh: '可用红枣代替', en: 'Red dates can be substituted' }
+            },
+            {
+                name: { zh: '豆沙', en: 'Red bean paste' },
+                amount: '200克 / 200g',
+                substitution: null
+            },
+            {
+                name: { zh: '粽叶', en: 'Bamboo leaves' },
+                amount: '12张 / 12 pieces',
+                substitution: { zh: '可用芦苇叶代替', en: 'Reed leaves can be substituted' }
+            },
+            {
+                name: { zh: '白糖', en: 'White sugar' },
+                amount: '50克 / 50g',
+                substitution: null
+            }
+        ],
+        steps: [
+            {
+                title: { zh: '准备食材', en: 'Prepare Ingredients' },
+                description: {
+                    zh: '糯米提前浸泡2小时，蜜枣去核，豆沙分成小块。',
+                    en: 'Soak glutinous rice for 2 hours in advance, remove pits from honey dates, divide red bean paste into small pieces.'
+                },
+                time: '120分钟 / 120 min'
+            },
+            {
+                title: { zh: '包粽子', en: 'Wrap Zongzi' },
+                description: {
+                    zh: '粽叶洗净烫软，将糯米、蜜枣、豆沙包入粽叶中，用绳子绑紧。',
+                    en: 'Wash and soften bamboo leaves, wrap glutinous rice, honey dates, and red bean paste in bamboo leaves, tie tightly with string.'
+                },
+                time: '30分钟 / 30 min'
+            },
+            {
+                title: { zh: '煮粽子', en: 'Cook Zongzi' },
+                description: {
+                    zh: '锅中加水，放入粽子，大火煮开后转小火煮2小时即可。',
+                    en: 'Add water to pot, add zongzi, bring to boil over high heat, then turn to low heat and cook for 2 hours.'
+                },
+                time: '120分钟 / 120 min'
+            }
+        ],
+        culture: {
+            zh: '粽子是端午节的传统食品，用糯米包裹馅料，纪念爱国诗人屈原。端午节吃粽子的习俗源于战国时期，传说屈原投江后，人们为了不让鱼虾伤害屈原的身体，纷纷将糯米投入江中。后来逐渐演变成用粽叶包裹糯米的粽子。粽子不仅纪念屈原，还注重驱邪和健康。古人认为粽叶有驱邪的作用，而糯米则有益健康。粽子的口味多样，南方偏爱咸味蛋黄肉粽，北方则喜欢甜味蜜枣豆沙粽。包粽子是重要的家庭活动，代代相传。',
+            en: 'Zongzi is a traditional food for Dragon Boat Festival, made by wrapping glutinous rice with fillings, commemorating the patriotic poet Qu Yuan. The custom of eating zongzi during Dragon Boat Festival originated from the Warring States period. Legend has it that after Qu Yuan threw himself into the river, people threw glutinous rice into the river to prevent fish and shrimp from harming his body. This gradually evolved into zongzi wrapped in bamboo leaves. Zongzi not only commemorates Qu Yuan but also emphasizes warding off evil and promoting health. Ancient people believed bamboo leaves had the power to ward off evil, while glutinous rice was beneficial for health. Zongzi comes in various flavors, with Southern China preferring salty egg yolk meat zongzi, while Northern China favors sweet date and red bean paste zongzi. Making zongzi is an important family activity passed down from generation to generation.'
+        }
+    },
+    {
+        id: 20,
+        name: {
+            zh: '莲蓉蛋黄月饼',
+            en: 'Lotus Seed Paste with Egg Yolk Mooncake'
+        },
+        description: {
+            zh: '经典广式月饼，莲蓉细腻，蛋黄香浓',
+            en: 'Classic Cantonese mooncake, delicate lotus paste, rich egg yolk'
+        },
+        image: '莲蓉蛋黄月饼封面.jpg',
+        difficulty: 'advanced',
+        spiciness: 0,
+        time: '180分钟 / 180 min',
+        servings: '8人份 / 8 servings',
+        scenario: 'midAutumnFestival',
+        ingredients: [
+            {
+                name: { zh: '低筋面粉', en: 'Cake flour' },
+                amount: '300克 / 300g',
+                substitution: null
+            },
+            {
+                name: { zh: '莲蓉', en: 'Lotus seed paste' },
+                amount: '400克 / 400g',
+                substitution: { zh: '可用豆沙代替', en: 'Red bean paste can be substituted' }
+            },
+            {
+                name: { zh: '咸蛋黄', en: 'Salted egg yolk' },
+                amount: '8个 / 8 pieces',
+                substitution: null
+            },
+            {
+                name: { zh: '转化糖浆', en: 'Inverted sugar syrup' },
+                amount: '200克 / 200g',
+                substitution: { zh: '可用蜂蜜代替', en: 'Honey can be substituted' }
+            },
+            {
+                name: { zh: '花生油', en: 'Peanut oil' },
+                amount: '100毫升 / 100ml',
+                substitution: { zh: '可用植物油代替', en: 'Vegetable oil can be substituted' }
+            }
+        ],
+        steps: [
+            {
+                title: { zh: '制作饼皮', en: 'Make Mooncake Crust' },
+                description: {
+                    zh: '将转化糖浆、花生油混合，加入面粉揉成面团，静置2小时。',
+                    en: 'Mix inverted sugar syrup and peanut oil, add flour and knead into dough, let rest for 2 hours.'
+                },
+                time: '120分钟 / 120 min'
+            },
+            {
+                title: { zh: '包月饼', en: 'Wrap Mooncake' },
+                description: {
+                    zh: '将面团分成小份，包入莲蓉和咸蛋黄，用模具压出花纹。',
+                    en: 'Divide dough into small pieces, wrap lotus paste and salted egg yolk, press with mold to create pattern.'
+                },
+                time: '30分钟 / 30 min'
+            },
+            {
+                title: { zh: '烤月饼', en: 'Bake Mooncake' },
+                description: {
+                    zh: '月饼表面刷水，烤箱预热180度，烤15分钟，取出刷蛋液再烤5分钟。',
+                    en: 'Brush mooncake surface with water, preheat oven to 180°C, bake for 15 minutes, remove and brush with egg wash, bake for another 5 minutes.'
+                },
+                time: '20分钟 / 20 min'
+            }
+        ],
+        culture: {
+            zh: '莲蓉蛋黄月饼是广式月饼的经典代表，以其细腻的莲蓉和香浓的咸蛋黄而闻名。莲蓉是用莲子磨制而成的馅料，口感细腻香甜。咸蛋黄则为月饼增添了丰富的层次感。\n\n中秋节吃月饼的习俗源于唐代，当时人们在八月十五赏月时，会制作圆形的糕点，象征团圆。这个节日与嫦娥奔月的传说紧密相连——相传嫦娥偷吃了丈夫后羿的不死药，飞升到月宫，从此与丈夫天人永隔。每年中秋，后羿都会在月下摆放嫦娥喜爱的食物，寄托思念之情。\n\n宋代大文豪苏轼的《水调歌头·明月几时有》更是中秋文化的经典之作："但愿人长久，千里共婵娟"，表达了对亲人的思念和对团圆的美好祝愿。莲蓉蛋黄月饼不仅口感好，还寓意着"莲"（连）和"圆"（团圆），象征着家庭和睦、团圆美满。',
+            en: 'Lotus seed paste with egg yolk mooncake is a classic representative of Cantonese mooncakes, famous for its delicate lotus paste and rich salted egg yolk. Lotus paste is a filling made from ground lotus seeds, with a delicate and sweet taste. Salted egg yolk adds rich layers to the mooncake.\n\nThe custom of eating mooncakes during Mid-Autumn Festival originated from the Tang Dynasty, when people would make round pastries while admiring the moon on the 15th day of the 8th lunar month, symbolizing reunion. This festival is closely connected to the legend of Chang\'e flying to the moon—according to the tale, Chang\'e ate her husband Hou Yi\'s elixir of immortality and ascended to the Moon Palace, separating from her husband forever. Every Mid-Autumn Festival, Hou Yi would place Chang\'e\'s favorite foods under the moon to express his longing.\n\nThe Song Dynasty literary giant Su Shi\'s famous poem "Prelude to Water Melody·When Will the Moon Be Clear and Bright" is a classic of Mid-Autumn culture: "May we all be blessed with longevity. Though far apart, we\'ll share the beauty of the moon together," expressing longing for loved ones and best wishes for reunion. Lotus seed paste with egg yolk mooncake not only tastes good but also implies "lotus" (connection) and "round" (reunion), symbolizing family harmony and perfect reunion.'
+        }
+    },
+    {
+        id: 21,
+        name: {
+            zh: '五仁月饼',
+            en: 'Five Kernel Mooncake'
+        },
+        description: {
+            zh: '传统口味，坚果丰富，香脆可口',
+            en: 'Traditional flavor, rich in nuts, crispy and delicious'
+        },
+        image: '五仁月饼封面.jpg',
+        difficulty: 'advanced',
+        spiciness: 0,
+        time: '180分钟 / 180 min',
+        servings: '8人份 / 8 servings',
+        scenario: 'midAutumnFestival',
+        ingredients: [
+            {
+                name: { zh: '低筋面粉', en: 'Cake flour' },
+                amount: '300克 / 300g',
+                substitution: null
+            },
+            {
+                name: { zh: '核桃仁', en: 'Walnuts' },
+                amount: '80克 / 80g',
+                substitution: { zh: '可用杏仁代替', en: 'Almonds can be substituted' }
+            },
+            {
+                name: { zh: '花生仁', en: 'Peanuts' },
+                amount: '80克 / 80g',
+                substitution: null
+            },
+            {
+                name: { zh: '瓜子仁', en: 'Melon seeds' },
+                amount: '50克 / 50g',
+                substitution: null
+            },
+            {
+                name: { zh: '芝麻', en: 'Sesame' },
+                amount: '50克 / 50g',
+                substitution: null
+            },
+            {
+                name: { zh: '杏仁', en: 'Almonds' },
+                amount: '50克 / 50g',
+                substitution: { zh: '可用核桃代替', en: 'Walnuts can be substituted' }
+            },
+            {
+                name: { zh: '转化糖浆', en: 'Inverted sugar syrup' },
+                amount: '200克 / 200g',
+                substitution: { zh: '可用蜂蜜代替', en: 'Honey can be substituted' }
+            }
+        ],
+        steps: [
+            {
+                title: { zh: '制作五仁馅', en: 'Make Five Kernel Filling' },
+                description: {
+                    zh: '将核桃、花生、瓜子、芝麻、杏仁炒香，切碎混合，加入糖浆拌匀。',
+                    en: 'Roast walnuts, peanuts, melon seeds, sesame, and almonds, chop and mix, add syrup and mix well.'
+                },
+                time: '30分钟 / 30 min'
+            },
+            {
+                title: { zh: '制作饼皮', en: 'Make Mooncake Crust' },
+                description: {
+                    zh: '将转化糖浆、花生油混合，加入面粉揉成面团，静置2小时。',
+                    en: 'Mix inverted sugar syrup and peanut oil, add flour and knead into dough, let rest for 2 hours.'
+                },
+                time: '120分钟 / 120 min'
+            },
+            {
+                title: { zh: '包月饼', en: 'Wrap Mooncake' },
+                description: {
+                    zh: '将面团分成小份，包入五仁馅，用模具压出花纹。',
+                    en: 'Divide dough into small pieces, wrap five kernel filling, press with mold to create pattern.'
+                },
+                time: '30分钟 / 30 min'
+            },
+            {
+                title: { zh: '烤月饼', en: 'Bake Mooncake' },
+                description: {
+                    zh: '月饼表面刷水，烤箱预热180度，烤15分钟，取出刷蛋液再烤5分钟。',
+                    en: 'Brush mooncake surface with water, preheat oven to 180°C, bake for 15 minutes, remove and brush with egg wash, bake for another 5 minutes.'
+                },
+                time: '20分钟 / 20 min'
+            }
+        ],
+        culture: {
+            zh: '五仁月饼是传统月饼的经典口味，以五种坚果仁为馅料，香脆可口。五仁通常包括核桃、花生、瓜子、芝麻、杏仁等，每种坚果都有独特的香味和营养价值。\n\n五仁月饼不仅口感丰富，还寓意着"五谷丰登"，象征着丰收和富足。中秋节吃月饼的习俗源于唐代，当时人们在八月十五赏月时，会制作圆形的糕点，象征团圆。这个节日与嫦娥奔月的传说紧密相连——相传嫦娥偷吃了丈夫后羿的不死药，飞升到月宫，从此与丈夫天人永隔。每年中秋，后羿都会在月下摆放嫦娥喜爱的食物，寄托思念之情。\n\n宋代大文豪苏轼的《水调歌头·明月几时有》更是中秋文化的经典之作："但愿人长久，千里共婵娟"，表达了对亲人的思念和对团圆的美好祝愿。五仁月饼是北方人喜爱的传统口味。',
+            en: 'Five kernel mooncake is a classic flavor of traditional mooncakes, using five kinds of nuts as filling, crispy and delicious. The five kernels usually include walnuts, peanuts, melon seeds, sesame, almonds, etc., each with unique aroma and nutritional value.\n\nFive kernel mooncake not only has rich taste but also implies "abundant harvest of five grains", symbolizing harvest and prosperity. The custom of eating mooncakes during Mid-Autumn Festival originated from the Tang Dynasty, when people would make round pastries while admiring the moon on the 15th day of the 8th lunar month, symbolizing reunion. This festival is closely connected to the legend of Chang\'e flying to the moon—according to the tale, Chang\'e ate her husband Hou Yi\'s elixir of immortality and ascended to the Moon Palace, separating from her husband forever. Every Mid-Autumn Festival, Hou Yi would place Chang\'e\'s favorite foods under the moon to express his longing.\n\nThe Song Dynasty literary giant Su Shi\'s famous poem "Prelude to Water Melody·When Will the Moon Be Clear and Bright" is a classic of Mid-Autumn culture: "May we all be blessed with longevity. Though far apart, we\'ll share the beauty of the moon together," expressing longing for loved ones and best wishes for reunion. Five kernel mooncake is a traditional flavor favored by people in Northern China.'
+        }
+    },
+    {
+        id: 22,
+        name: {
+            zh: '云腿月饼',
+            en: 'Yunnan Ham Mooncake'
+        },
+        description: {
+            zh: '云南特色，火腿鲜香，咸甜适中',
+            en: 'Yunnan specialty, savory ham, moderate sweet and salty'
+        },
+        image: '云腿月饼封面.jpg',
+        difficulty: 'advanced',
+        spiciness: 0,
+        time: '180分钟 / 180 min',
+        servings: '8人份 / 8 servings',
+        scenario: 'midAutumnFestival',
+        ingredients: [
+            {
+                name: { zh: '低筋面粉', en: 'Cake flour' },
+                amount: '300克 / 300g',
+                substitution: null
+            },
+            {
+                name: { zh: '云腿', en: 'Yunnan ham' },
+                amount: '200克 / 200g',
+                substitution: { zh: '可用金华火腿代替', en: 'Jinhua ham can be substituted' }
+            },
+            {
+                name: { zh: '白糖', en: 'White sugar' },
+                amount: '100克 / 100g',
+                substitution: null
+            },
+            {
+                name: { zh: '蜂蜜', en: 'Honey' },
+                amount: '50克 / 50g',
+                substitution: null
+            },
+            {
+                name: { zh: '花生油', en: 'Peanut oil' },
+                amount: '100毫升 / 100ml',
+                substitution: { zh: '可用植物油代替', en: 'Vegetable oil can be substituted' }
+            }
+        ],
+        steps: [
+            {
+                title: { zh: '制作云腿馅', en: 'Make Yunnan Ham Filling' },
+                description: {
+                    zh: '将云腿蒸熟，切碎，加入白糖、蜂蜜拌匀。',
+                    en: 'Steam Yunnan ham, chop into pieces, add white sugar and honey, mix well.'
+                },
+                time: '30分钟 / 30 min'
+            },
+            {
+                title: { zh: '制作饼皮', en: 'Make Mooncake Crust' },
+                description: {
+                    zh: '将蜂蜜、花生油混合，加入面粉揉成面团，静置2小时。',
+                    en: 'Mix honey and peanut oil, add flour and knead into dough, let rest for 2 hours.'
+                },
+                time: '120分钟 / 120 min'
+            },
+            {
+                title: { zh: '包月饼', en: 'Wrap Mooncake' },
+                description: {
+                    zh: '将面团分成小份，包入云腿馅，用模具压出花纹。',
+                    en: 'Divide dough into small pieces, wrap Yunnan ham filling, press with mold to create pattern.'
+                },
+                time: '30分钟 / 30 min'
+            },
+            {
+                title: { zh: '烤月饼', en: 'Bake Mooncake' },
+                description: {
+                    zh: '月饼表面刷水，烤箱预热180度，烤15分钟，取出刷蛋液再烤5分钟。',
+                    en: 'Brush mooncake surface with water, preheat oven to 180°C, bake for 15 minutes, remove and brush with egg wash, bake for another 5 minutes.'
+                },
+                time: '20分钟 / 20 min'
+            }
+        ],
+        culture: {
+            zh: '云腿月饼是云南的特色月饼，以云南宣威火腿为馅料，鲜香可口。云腿月饼的历史可以追溯到清代，当时云南的商人在中秋节会制作火腿月饼作为礼品。\n\n云腿月饼的特点是咸甜适中，火腿的香味浓郁，是云南人中秋节必备的食品。这个节日与嫦娥奔月的传说紧密相连——相传嫦娥偷吃了丈夫后羿的不死药，飞升到月宫，从此与丈夫天人永隔。每年中秋，后羿都会在月下摆放嫦娥喜爱的食物，寄托思念之情。\n\n宋代大文豪苏轼的《水调歌头·明月几时有》更是中秋文化的经典之作："但愿人长久，千里共婵娟"，表达了对亲人的思念和对团圆的美好祝愿。云腿月饼不仅口感独特，还体现了云南的地方特色和饮食文化。',
+            en: 'Yunnan ham mooncake is a specialty mooncake of Yunnan, using Yunnan Xuanwei ham as filling, savory and delicious. The history of Yunnan ham mooncake can be traced back to the Qing Dynasty, when Yunnan merchants would make ham mooncakes as gifts during Mid-Autumn Festival.\n\nYunnan ham mooncake is characterized by moderate sweet and salty taste, with rich ham aroma, and is an essential food for Yunnan people during Mid-Autumn Festival. This festival is closely connected to the legend of Chang\'e flying to the moon—according to the tale, Chang\'e ate her husband Hou Yi\'s elixir of immortality and ascended to the Moon Palace, separating from her husband forever. Every Mid-Autumn Festival, Hou Yi would place Chang\'e\'s favorite foods under the moon to express his longing.\n\nThe Song Dynasty literary giant Su Shi\'s famous poem "Prelude to Water Melody·When Will the Moon Be Clear and Bright" is a classic of Mid-Autumn culture: "May we all be blessed with longevity. Though far apart, we\'ll share the beauty of the moon together," expressing longing for loved ones and best wishes for reunion. Yunnan ham mooncake not only has unique taste but also reflects Yunnan\'s local characteristics and food culture.'
+        }
+    },
+    {
+        id: 23,
+        name: {
+            zh: '豆沙月饼',
+            en: 'Red Bean Paste Mooncake'
+        },
+        description: {
+            zh: '经典甜味，豆沙细腻，口感绵软',
+            en: 'Classic sweet flavor, delicate red bean paste, soft texture'
+        },
+        image: '豆沙月饼封面.jpg',
+        difficulty: 'advanced',
+        spiciness: 0,
+        time: '180分钟 / 180 min',
+        servings: '8人份 / 8 servings',
+        scenario: 'midAutumnFestival',
+        ingredients: [
+            {
+                name: { zh: '低筋面粉', en: 'Cake flour' },
+                amount: '300克 / 300g',
+                substitution: null
+            },
+            {
+                name: { zh: '红豆', en: 'Red beans' },
+                amount: '400克 / 400g',
+                substitution: { zh: '可用绿豆代替', en: 'Mung beans can be substituted' }
+            },
+            {
+                name: { zh: '白糖', en: 'White sugar' },
+                amount: '200克 / 200g',
+                substitution: null
+            },
+            {
+                name: { zh: '转化糖浆', en: 'Inverted sugar syrup' },
+                amount: '200克 / 200g',
+                substitution: { zh: '可用蜂蜜代替', en: 'Honey can be substituted' }
+            },
+            {
+                name: { zh: '花生油', en: 'Peanut oil' },
+                amount: '100毫升 / 100ml',
+                substitution: { zh: '可用植物油代替', en: 'Vegetable oil can be substituted' }
+            }
+        ],
+        steps: [
+            {
+                title: { zh: '制作豆沙', en: 'Make Red Bean Paste' },
+                description: {
+                    zh: '红豆提前浸泡，煮至软烂，打成泥，加糖炒干。',
+                    en: 'Soak red beans in advance, cook until soft, mash into paste, stir-fry with sugar until dry.'
+                },
+                time: '120分钟 / 120 min'
+            },
+            {
+                title: { zh: '制作饼皮', en: 'Make Mooncake Crust' },
+                description: {
+                    zh: '将转化糖浆、花生油混合，加入面粉揉成面团，静置2小时。',
+                    en: 'Mix inverted sugar syrup and peanut oil, add flour and knead into dough, let rest for 2 hours.'
+                },
+                time: '120分钟 / 120 min'
+            },
+            {
+                title: { zh: '包月饼', en: 'Wrap Mooncake' },
+                description: {
+                    zh: '将面团分成小份，包入豆沙馅，用模具压出花纹。',
+                    en: 'Divide dough into small pieces, wrap red bean paste filling, press with mold to create pattern.'
+                },
+                time: '30分钟 / 30 min'
+            },
+            {
+                title: { zh: '烤月饼', en: 'Bake Mooncake' },
+                description: {
+                    zh: '月饼表面刷水，烤箱预热180度，烤15分钟，取出刷蛋液再烤5分钟。',
+                    en: 'Brush mooncake surface with water, preheat oven to 180°C, bake for 15 minutes, remove and brush with egg wash, bake for another 5 minutes.'
+                },
+                time: '20分钟 / 20 min'
+            }
+        ],
+        culture: {
+            zh: '豆沙月饼是传统月饼的经典甜味，以红豆沙为馅料，口感绵软香甜。豆沙月饼的历史悠久，是广式月饼的代表之一。红豆在中国文化中象征着"相思"，因此豆沙月饼也寓意着对远方亲人的思念。\n\n中秋节吃月饼的习俗源于唐代，当时人们在八月十五赏月时，会制作圆形的糕点，象征团圆。这个节日与嫦娥奔月的传说紧密相连——相传嫦娥偷吃了丈夫后羿的不死药，飞升到月宫，从此与丈夫天人永隔。每年中秋，后羿都会在月下摆放嫦娥喜爱的食物，寄托思念之情。\n\n宋代大文豪苏轼的《水调歌头·明月几时有》更是中秋文化的经典之作："但愿人长久，千里共婵娟"，表达了对亲人的思念和对团圆的美好祝愿。豆沙月饼不仅口感好，还寓意着"相思"和"团圆"，寄托着人们对亲人的思念。',
+            en: 'Red bean paste mooncake is a classic sweet flavor of traditional mooncakes, using red bean paste as filling, with soft and sweet texture. Red bean paste mooncake has a long history and is one of the representatives of Cantonese mooncakes. Red beans symbolize "missing" in Chinese culture, so red bean paste mooncake also implies longing for distant relatives.\n\nThe custom of eating mooncakes during Mid-Autumn Festival originated from the Tang Dynasty, when people would make round pastries while admiring the moon on the 15th day of the 8th lunar month, symbolizing reunion. This festival is closely connected to the legend of Chang\'e flying to the moon—according to the tale, Chang\'e ate her husband Hou Yi\'s elixir of immortality and ascended to the Moon Palace, separating from her husband forever. Every Mid-Autumn Festival, Hou Yi would place Chang\'e\'s favorite foods under the moon to express his longing.\n\nThe Song Dynasty literary giant Su Shi\'s famous poem "Prelude to Water Melody·When Will the Moon Be Clear and Bright" is a classic of Mid-Autumn culture: "May we all be blessed with longevity. Though far apart, we\'ll share the beauty of the moon together," expressing longing for loved ones and best wishes for reunion. Red bean paste mooncake not only tastes good but also implies "missing" and "reunion", expressing people\'s longing for their relatives.'
+        }
+    },
+    {
+        id: 24,
+        name: {
+            zh: '重阳糕',
+            en: 'Chongyang Cake'
+        },
+        description: {
+            zh: '重阳节传统糕点，象征步步高升',
+            en: 'Traditional Chongyang Festival pastry, symbolizing rising step by step'
+        },
+        image: '重阳糕封面.jpg',
+        difficulty: 'intermediate',
+        spiciness: 0,
+        time: '90分钟 / 90 min',
+        servings: '6人份 / 6 servings',
+        scenario: 'doubleNinthFestival',
+        ingredients: [
+            {
+                name: { zh: '糯米粉', en: 'Glutinous rice flour' },
+                amount: '500克 / 500g',
+                substitution: null
+            },
+            {
+                name: { zh: '白糖', en: 'White sugar' },
+                amount: '150克 / 150g',
+                substitution: null
+            },
+            {
+                name: { zh: '红枣', en: 'Red dates' },
+                amount: '100克 / 100g',
+                substitution: { zh: '可用蜜枣代替', en: 'Honey dates can be substituted' }
+            },
+            {
+                name: { zh: '核桃仁', en: 'Walnuts' },
+                amount: '80克 / 80g',
+                substitution: { zh: '可用杏仁代替', en: 'Almonds can be substituted' }
+            },
+            {
+                name: { zh: '葡萄干', en: 'Raisins' },
+                amount: '50克 / 50g',
+                substitution: { zh: '可用蔓越莓干代替', en: 'Dried cranberries can be substituted' }
+            },
+            {
+                name: { zh: '水', en: 'Water' },
+                amount: '适量 /适量',
+                substitution: null
+            }
+        ],
+        steps: [
+            {
+                title: { zh: '准备食材', en: 'Prepare Ingredients' },
+                description: {
+                    zh: '红枣去核切碎，核桃仁炒香，葡萄干洗净。',
+                    en: 'Remove pits from red dates and chop, roast walnut kernels, wash raisins.'
+                },
+                time: '15分钟 / 15 min'
+            },
+            {
+                title: { zh: '制作糕体', en: 'Make Cake Body' },
+                description: {
+                    zh: '将糯米粉、白糖混合，逐渐加入水，揉成光滑的面团。',
+                    en: 'Mix glutinous rice flour and white sugar, gradually add water, knead into smooth dough.'
+                },
+                time: '20分钟 / 20 min'
+            },
+            {
+                title: { zh: '蒸糕', en: 'Steam Cake' },
+                description: {
+                    zh: '将面团分成小块，加入红枣、核桃、葡萄干，放入蒸笼大火蒸40分钟。',
+                    en: 'Divide dough into small pieces, add red dates, walnuts, and raisins, place in steamer and steam over high heat for 40 minutes.'
+                },
+                time: '40分钟 / 40 min'
+            }
+        ],
+        culture: {
+            zh: '重阳糕是重阳节的传统食品，象征着"步步高升"。重阳节在农历九月初九，"九"与"久"谐音，寓意着长久。重阳糕的制作历史悠久，最早可以追溯到汉代。重阳糕通常有多层，每层都铺有不同的馅料，如红枣、核桃、葡萄干等。吃重阳糕的习俗源于人们对健康长寿的期盼，希望家人朋友都能"步步高升"，生活和事业越来越好。重阳节还有登高赏秋的习俗，人们会登高远眺，欣赏秋天的美景，祈求健康长寿。',
+            en: 'Chongyang cake is a traditional food for Chongyang Festival, symbolizing "rising step by step". Chongyang Festival falls on the 9th day of the 9th lunar month, and "nine" is homophonous with "long-lasting" in Chinese, implying longevity. The history of making Chongyang cake is long, dating back to the Han Dynasty. Chongyang cake usually has multiple layers, with different fillings spread on each layer, such as red dates, walnuts, raisins, etc. The custom of eating Chongyang cake originates from people\'s hope for health and longevity, wishing family and friends can "rise step by step," with better lives and careers. Chongyang Festival also has the custom of climbing heights to admire autumn, where people climb high and look far, enjoying the beautiful scenery of autumn and praying for health and longevity.'
+        }
+    },
+    {
+        id: 25,
+        name: {
+            zh: '青团',
+            en: 'Green Rice Balls'
+        },
+        description: {
+            zh: '清明节传统食品，艾草糯米，清香软糯',
+            en: 'Traditional Qingming Festival food, mugwort and glutinous rice, fragrant and soft'
+        },
+        image: '青团封面.jpg',
+        difficulty: 'intermediate',
+        spiciness: 0,
+        time: '120分钟 / 120 min',
+        servings: '6人份 / 6 servings',
+        scenario: 'qingmingFestival',
+        ingredients: [
+            {
+                name: { zh: '糯米粉', en: 'Glutinous rice flour' },
+                amount: '500克 / 500g',
+                substitution: null
+            },
+            {
+                name: { zh: '艾草', en: 'Mugwort' },
+                amount: '200克 / 200g',
+                substitution: { zh: '可用菠菜汁代替', en: 'Spinach juice can be substituted' }
+            },
+            {
+                name: { zh: '白糖', en: 'White sugar' },
+                amount: '100克 / 100g',
+                substitution: null
+            },
+            {
+                name: { zh: '红豆沙', en: 'Red bean paste' },
+                amount: '200克 / 200g',
+                substitution: null
+            },
+            {
+                name: { zh: '猪油', en: 'Lard' },
+                amount: '50克 / 50g',
+                substitution: { zh: '可用植物油代替', en: 'Vegetable oil can be substituted' }
+            },
+            {
+                name: { zh: '水', en: 'Water' },
+                amount: '适量 /适量',
+                substitution: null
+            }
+        ],
+        steps: [
+            {
+                title: { zh: '准备艾草汁', en: 'Prepare Mugwort Juice' },
+                description: {
+                    zh: '将艾草洗净焯水，捞出沥干，打成汁。',
+                    en: 'Wash mugwort, blanch in boiling water, drain and blend into juice.'
+                },
+                time: '20分钟 / 20 min'
+            },
+            {
+                title: { zh: '制作面团', en: 'Make Dough' },
+                description: {
+                    zh: '将糯米粉、白糖、猪油混合，加入艾草汁和适量水，揉成光滑的面团。',
+                    en: 'Mix glutinous rice flour, white sugar, and lard, add mugwort juice and appropriate amount of water, knead into smooth dough.'
+                },
+                time: '20分钟 / 20 min'
+            },
+            {
+                title: { zh: '包青团', en: 'Wrap Green Rice Balls' },
+                description: {
+                    zh: '将面团分成小块，包入红豆沙，搓成圆球。',
+                    en: 'Divide dough into small pieces, wrap red bean paste, roll into balls.'
+                },
+                time: '30分钟 / 30 min'
+            },
+            {
+                title: { zh: '蒸青团', en: 'Steam Green Rice Balls' },
+                description: {
+                    zh: '将青团放入蒸笼，大火蒸20分钟即可。',
+                    en: 'Place green rice balls in steamer, steam over high heat for 20 minutes.'
+                },
+                time: '20分钟 / 20 min'
+            }
+        ],
+        culture: {
+            zh: '青团是清明节的传统食品，用艾草和糯米制作，通常是绿色的，象征春天的到来和缅怀先人。清明节是中国的传统节日，人们会在这一天扫墓祭祖，表达对先人的思念。青团的制作历史悠久，最早可以追溯到春秋时期。艾草有驱邪的作用，糯米则有益健康。青团的绿色象征着春天的生机和希望，吃青团不仅是对先人的缅怀，也是对美好生活的期盼。在江南地区，青团是清明节必备的食品，家家户户都会制作。',
+            en: 'Green rice balls are traditional food for Qingming Festival, made with mugwort and glutinous rice, usually green in color, symbolizing the arrival of spring and remembering ancestors. Qingming Festival is a traditional Chinese holiday when people sweep tombs and worship ancestors, expressing longing for their ancestors. The history of making green rice balls is long, dating back to the Spring and Autumn Period. Mugwort has the power to ward off evil, while glutinous rice is beneficial for health. The green color of green rice balls symbolizes the vitality and hope of spring. Eating green rice balls is not only a remembrance of ancestors but also an expectation for a better life. In the Jiangnan region, green rice balls are essential food for Qingming Festival, and every household makes them.'
+        }
+    },
+    {
+        id: 26,
+        name: {
+            zh: '饺子（北方）',
+            en: 'Dumplings (North China)'
+        },
+        description: {
+            zh: '冬至北方传统，形似元宝，象征财富',
+            en: 'Northern tradition for Winter Solstice, shaped like gold ingots, symbolizing wealth'
+        },
+        image: '饺子封面.jpg',
+        difficulty: 'intermediate',
+        spiciness: 0,
+        time: '90分钟 / 90 min',
+        servings: '6人份 / 6 servings',
+        scenario: 'winterSolstice',
+        ingredients: [
+            {
+                name: { zh: '面粉', en: 'All-purpose flour' },
+                amount: '500克 / 500g',
+                substitution: null
+            },
+            {
+                name: { zh: '猪肉馅', en: 'Ground pork' },
+                amount: '400克 / 400g',
+                substitution: { zh: '可用牛肉馅或鸡肉馅代替', en: 'Ground beef or chicken can be substituted' }
+            },
+            {
+                name: { zh: '韭菜', en: 'Chinese chives' },
+                amount: '200克 / 200g',
+                substitution: { zh: '可用芹菜或白菜代替', en: 'Celery or cabbage can be substituted' }
+            },
+            {
+                name: { zh: '生抽', en: 'Light soy sauce' },
+                amount: '2汤匙 / 2 tbsp',
+                substitution: { zh: '可用盐代替', en: 'Salt can be substituted' }
+            },
+            {
+                name: { zh: '料酒', en: 'Cooking wine' },
+                amount: '1汤匙 / 1 tbsp',
+                substitution: { zh: '可用白酒代替', en: 'White wine can be substituted' }
+            },
+            {
+                name: { zh: '香油', en: 'Sesame oil' },
+                amount: '1茶匙 / 1 tsp',
+                substitution: { zh: '可用植物油代替', en: 'Vegetable oil can be substituted' }
+            },
+            {
+                name: { zh: '水', en: 'Water' },
+                amount: '适量 /适量',
+                substitution: null
+            }
+        ],
+        steps: [
+            {
+                title: { zh: '和面', en: 'Make Dough' },
+                description: {
+                    zh: '面粉加水和成光滑的面团，静置30分钟。',
+                    en: 'Mix flour with water to form smooth dough, let rest for 30 minutes.'
+                },
+                time: '30分钟 / 30 min'
+            },
+            {
+                title: { zh: '调馅', en: 'Prepare Filling' },
+                description: {
+                    zh: '猪肉馅加韭菜、生抽、料酒、香油搅拌均匀。',
+                    en: 'Mix ground pork with Chinese chives, light soy sauce, cooking wine, and sesame oil.'
+                },
+                time: '20分钟 / 20 min'
+            },
+            {
+                title: { zh: '包饺子', en: 'Wrap Dumplings' },
+                description: {
+                    zh: '面团擀成饺子皮，包入馅料，捏成元宝形状。',
+                    en: 'Roll dough into dumpling wrappers, fill with filling, shape like gold ingots.'
+                },
+                time: '30分钟 / 30 min'
+            },
+            {
+                title: { zh: '煮饺子', en: 'Boil Dumplings' },
+                description: {
+                    zh: '水开后下饺子，煮至饺子浮起即可。',
+                    en: 'Boil water, add dumplings, cook until they float to the surface.'
+                },
+                time: '10分钟 / 10 min'
+            }
+        ],
+        culture: {
+            zh: '饺子是北方冬至的传统食品，形似元宝，象征着财富和好运。冬至在中国传统文化中是一个重要的节气，有"冬至大如年"的说法。北方人认为冬至吃饺子可以防止冻耳朵，这个习俗源于医圣张仲景的"祛寒娇耳汤"传说。饺子的形状像耳朵，寓意着保护耳朵免受寒冷。在北方，冬至吃饺子是必不可少的习俗，家家户户都会包饺子，一家人围坐在一起吃饺子，象征着团圆和温暖。',
+            en: 'Dumplings are traditional food for Winter Solstice in northern China, shaped like gold ingots, symbolizing wealth and good luck. Winter Solstice is an important solar term in traditional Chinese culture, with the saying "Winter Solstice is as important as the New Year." Northerners believe that eating dumplings on Winter Solstice can prevent frozen ears, a custom derived from the legend of the medical sage Zhang Zhongjing\'s "dispelling cold delicate ear soup." The shape of dumplings resembles ears, implying protection of ears from cold. In the north, eating dumplings on Winter Solstice is an essential custom, and every household makes dumplings, with the family sitting together eating dumplings, symbolizing reunion and warmth.'
+        }
+    },
+    {
+        id: 27,
+        name: {
+            zh: '汤圆（南方）',
+            en: 'Tangyuan (South China)'
+        },
+        description: {
+            zh: '冬至南方传统，糯米团子，象征团圆',
+            en: 'Southern tradition for Winter Solstice, glutinous rice balls, symbolizing reunion'
+        },
+        image: '汤圆（南方）封面.jpg',
+        difficulty: 'intermediate',
+        spiciness: 0,
+        time: '60分钟 / 60 min',
+        servings: '6人份 / 6 servings',
+        scenario: 'winterSolstice',
+        ingredients: [
+            {
+                name: { zh: '糯米粉', en: 'Glutinous rice flour' },
+                amount: '300克 / 300g',
+                substitution: null
+            },
+            {
+                name: { zh: '黑芝麻', en: 'Black sesame' },
+                amount: '100克 / 100g',
+                substitution: { zh: '可用花生代替', en: 'Peanuts can be substituted' }
+            },
+            {
+                name: { zh: '白糖', en: 'White sugar' },
+                amount: '100克 / 100g',
+                substitution: null
+            },
+            {
+                name: { zh: '猪油', en: 'Lard' },
+                amount: '50克 / 50g',
+                substitution: { zh: '可用植物油代替', en: 'Vegetable oil can be substituted' }
+            },
+            {
+                name: { zh: '水', en: 'Water' },
+                amount: '适量 /适量',
+                substitution: null
+            }
+        ],
+        steps: [
+            {
+                title: { zh: '制作馅料', en: 'Make Filling' },
+                description: {
+                    zh: '黑芝麻炒香，加白糖、猪油捣成泥状。',
+                    en: 'Roast black sesame, add white sugar and lard, mash into paste.'
+                },
+                time: '15分钟 / 15 min'
+            },
+            {
+                title: { zh: '和面', en: 'Make Dough' },
+                description: {
+                    zh: '糯米粉加水和成光滑的面团。',
+                    en: 'Mix glutinous rice flour with water to form smooth dough.'
+                },
+                time: '15分钟 / 15 min'
+            },
+            {
+                title: { zh: '包汤圆', en: 'Wrap Tangyuan' },
+                description: {
+                    zh: '面团分成小块，包入芝麻馅，搓成圆球。',
+                    en: 'Divide dough into small pieces, wrap sesame filling, roll into balls.'
+                },
+                time: '20分钟 / 20 min'
+            },
+            {
+                title: { zh: '煮汤圆', en: 'Boil Tangyuan' },
+                description: {
+                    zh: '水开后下汤圆，煮至汤圆浮起即可。',
+                    en: 'Boil water, add tangyuan, cook until they float to the surface.'
+                },
+                time: '10分钟 / 10 min'
+            }
+        ],
+        culture: {
+            zh: '汤圆是南方冬至的传统食品，用糯米制作，象征着团圆和美满。冬至在中国传统文化中是一个重要的节气，有"冬至大如年"的说法。南方人认为冬至吃汤圆可以驱寒保暖，汤圆的圆形象征着团圆和完整。汤圆的馅料通常是甜的，寓意着生活甜甜蜜蜜。在南方，冬至吃汤圆是必不可少的习俗，家家户户都会做汤圆，一家人围坐在一起吃汤圆，象征着团圆和温暖。汤圆的"团"字也寓意着团聚，表达了人们对家庭和睦、团圆美满的期盼。',
+            en: 'Tangyuan is traditional food for Winter Solstice in southern China, made with glutinous rice, symbolizing reunion and completeness. Winter Solstice is an important solar term in traditional Chinese culture, with the saying "Winter Solstice is as important as the New Year." Southerners believe that eating tangyuan on Winter Solstice can drive away cold and keep warm, and the round shape of tangyuan symbolizes reunion and completeness. The filling of tangyuan is usually sweet, implying a sweet life. In the south, eating tangyuan on Winter Solstice is an essential custom, and every household makes tangyuan, with the family sitting together eating tangyuan, symbolizing reunion and warmth. The character "团" in tangyuan also implies gathering, expressing people\'s expectation for family harmony and reunion.'
+        }
+    },
+    {
+        id: 28,
+        name: {
+            zh: '长寿面',
+            en: 'Longevity Noodles'
+        },
+        description: {
+            zh: '生日传统，面条细长，象征长寿健康',
+            en: 'Birthday tradition, long noodles, symbolizing longevity and health'
+        },
+        image: '长寿面封面.jpg',
+        difficulty: 'beginner',
+        spiciness: 0,
+        time: '30分钟 / 30 min',
+        servings: '2人份 / 2 servings',
+        scenario: 'birthday',
+        ingredients: [
+            {
+                name: { zh: '面条', en: 'Noodles' },
+                amount: '200克 / 200g',
+                substitution: null
+            },
+            {
+                name: { zh: '青菜', en: 'Green vegetables' },
+                amount: '100克 / 100g',
+                substitution: { zh: '可用菠菜或小白菜代替', en: 'Spinach or baby bok choy can be substituted' }
+            },
+            {
+                name: { zh: '鸡蛋', en: 'Eggs' },
+                amount: '2个 / 2 pieces',
+                substitution: null
+            },
+            {
+                name: { zh: '生抽', en: 'Light soy sauce' },
+                amount: '2汤匙 / 2 tbsp',
+                substitution: { zh: '可用盐代替', en: 'Salt can be substituted' }
+            },
+            {
+                name: { zh: '香油', en: 'Sesame oil' },
+                amount: '1茶匙 / 1 tsp',
+                substitution: { zh: '可用植物油代替', en: 'Vegetable oil can be substituted' }
+            },
+            {
+                name: { zh: '葱花', en: 'Green onions' },
+                amount: '适量 /适量',
+                substitution: null
+            },
+            {
+                name: { zh: '水', en: 'Water' },
+                amount: '适量 /适量',
+                substitution: null
+            }
+        ],
+        steps: [
+            {
+                title: { zh: '煎荷包蛋', en: 'Fry Poached Eggs' },
+                description: {
+                    zh: '平底锅刷油，打入鸡蛋，小火煎至两面金黄。',
+                    en: 'Brush pan with oil, crack eggs, fry over low heat until both sides are golden brown.'
+                },
+                time: '5分钟 / 5 min'
+            },
+            {
+                title: { zh: '煮面条', en: 'Boil Noodles' },
+                description: {
+                    zh: '水开后下面条，煮至面条软熟。',
+                    en: 'Boil water, add noodles, cook until noodles are soft and cooked.'
+                },
+                time: '10分钟 / 10 min'
+            },
+            {
+                title: { zh: '烫青菜', en: 'Blanch Green Vegetables' },
+                description: {
+                    zh: '青菜洗净，放入开水中烫熟，捞出沥干。',
+                    en: 'Wash green vegetables, blanch in boiling water until cooked, drain.'
+                },
+                time: '3分钟 / 3 min'
+            },
+            {
+                title: { zh: '调味装盘', en: 'Season and Serve' },
+                description: {
+                    zh: '面条盛入碗中，加入生抽、香油调味，放上荷包蛋和青菜，撒上葱花。',
+                    en: 'Place noodles in a bowl, season with light soy sauce and sesame oil, top with poached eggs and green vegetables, sprinkle with green onions.'
+                },
+                time: '2分钟 / 2 min'
+            }
+        ],
+        culture: {
+            zh: '长寿面是中国人过生日时的传统食品，面条细长，象征着长寿和健康。在中国传统文化中，面条的长度代表寿命的长短，吃长寿面寓意着长命百岁、健康长寿。长寿面的制作简单，但寓意深远，是生日宴席上必不可少的菜品。荷包蛋象征着圆满和完整，青菜则代表着生机和活力。在生日这一天，家人和朋友会聚在一起吃长寿面，为寿星送上祝福，祝愿他健康长寿、幸福美满。长寿面不仅是一道美食，更是一种文化传承，承载着人们对美好生活的向往。',
+            en: 'Longevity noodles are traditional food for birthdays in China, with long noodles symbolizing longevity and health. In traditional Chinese culture, the length of noodles represents the length of life, and eating longevity noodles implies living a long and healthy life. Longevity noodles are simple to make but have profound meaning, and are an essential dish at birthday banquets. Poached eggs symbolize completeness and perfection, while green vegetables represent vitality and energy. On birthdays, family and friends gather together to eat longevity noodles, sending blessings to the birthday person, wishing them health, longevity, and happiness. Longevity noodles are not only a delicious food but also a cultural heritage, carrying people\'s longing for a better life.'
+        }
+    },
+    {
+        id: 29,
+        name: {
+            zh: '全家福',
+            en: 'Family Reunion Platter'
+        },
+        description: {
+            zh: '婚宴或寿宴上的传统大盘菜，通常包含海鲜、肉类和蔬菜，象征家人团圆与和谐。每一口都寓意着喜庆和幸福。',
+            en: 'A traditional large platter served at weddings or birthday banquets, usually featuring seafood, meat, and vegetables. It symbolizes family reunion, unity, and happiness, with every bite carrying festive blessings.'
+        },
+        image: '全家福封面.jpg',
+        difficulty: 'advanced',
+        spiciness: 1,
+        time: '120分钟 / 120 min',
+        servings: '8人份 / 8 servings',
+        scenario: 'wedding',
+        ingredients: [
+            {
+                name: { zh: '大虾', en: 'Large shrimp' },
+                amount: '8只 / 8 pieces',
+                substitution: { zh: '可用虾仁代替', en: 'Peeled shrimp can be substituted' }
+            },
+            {
+                name: { zh: '海参', en: 'Sea cucumber' },
+                amount: '200克 / 200g',
+                substitution: { zh: '可用墨鱼代替', en: 'Cuttlefish can be substituted' }
+            },
+            {
+                name: { zh: '鸡肉', en: 'Chicken' },
+                amount: '300克 / 300g',
+                substitution: { zh: '可用鸭肉代替', en: 'Duck can be substituted' }
+            },
+            {
+                name: { zh: '猪肉', en: 'Pork' },
+                amount: '200克 / 200g',
+                substitution: null
+            },
+            {
+                name: { zh: '香菇', en: 'Shiitake mushrooms' },
+                amount: '100克 / 100g',
+                substitution: { zh: '可用口蘑代替', en: 'Button mushrooms can be substituted' }
+            },
+            {
+                name: { zh: '西兰花', en: 'Broccoli' },
+                amount: '200克 / 200g',
+                substitution: { zh: '可用菜花代替', en: 'Cauliflower can be substituted' }
+            },
+            {
+                name: { zh: '胡萝卜', en: 'Carrots' },
+                amount: '100克 / 100g',
+                substitution: null
+            },
+            {
+                name: { zh: '生抽', en: 'Light soy sauce' },
+                amount: '3汤匙 / 3 tbsp',
+                substitution: { zh: '可用盐代替', en: 'Salt can be substituted' }
+            },
+            {
+                name: { zh: '料酒', en: 'Cooking wine' },
+                amount: '2汤匙 / 2 tbsp',
+                substitution: { zh: '可用白酒代替', en: 'White wine can be substituted' }
+            },
+            {
+                name: { zh: '姜', en: 'Ginger' },
+                amount: '适量 /适量',
+                substitution: null
+            },
+            {
+                name: { zh: '蒜', en: 'Garlic' },
+                amount: '适量 /适量',
+                substitution: null
+            },
+            {
+                name: { zh: '葱', en: 'Green onions' },
+                amount: '适量 /适量',
+                substitution: null
+            }
+        ],
+        steps: [
+            {
+                title: { zh: '准备食材', en: 'Prepare Ingredients' },
+                description: {
+                    zh: '大虾去虾线，海参切片，鸡肉和猪肉切块，香菇泡发，西兰花切小朵，胡萝卜切片。',
+                    en: 'Remove shrimp veins, slice sea cucumber, cut chicken and pork into pieces, soak shiitake mushrooms, cut broccoli into small florets, slice carrots.'
+                },
+                time: '20分钟 / 20 min'
+            },
+            {
+                title: { zh: '焯水处理', en: 'Blanch Ingredients' },
+                description: {
+                    zh: '鸡肉、猪肉、海参分别焯水去腥，西兰花和胡萝卜焯水断生。',
+                    en: 'Blanch chicken, pork, and sea cucumber separately to remove fishy smell, blanch broccoli and carrots until cooked.'
+                },
+                time: '15分钟 / 15 min'
+            },
+            {
+                title: { zh: '炒制主料', en: 'Stir-fry Main Ingredients' },
+                description: {
+                    zh: '热锅下油，爆香姜蒜，下鸡肉和猪肉翻炒至变色，加入海参和香菇继续炒制。',
+                    en: 'Heat oil in pan, sauté ginger and garlic, add chicken and pork stir-fry until color changes, add sea cucumber and shiitake mushrooms continue stir-frying.'
+                },
+                time: '20分钟 / 20 min'
+            },
+            {
+                title: { zh: '加入大虾', en: 'Add Shrimp' },
+                description: {
+                    zh: '加入大虾翻炒至变色，加入生抽、料酒调味。',
+                    en: 'Add shrimp stir-fry until color changes, season with light soy sauce and cooking wine.'
+                },
+                time: '10分钟 / 10 min'
+            },
+            {
+                title: { zh: '加入蔬菜', en: 'Add Vegetables' },
+                description: {
+                    zh: '加入西兰花和胡萝卜，翻炒均匀，加适量水焖煮10分钟。',
+                    en: 'Add broccoli and carrots, stir-fry evenly, add appropriate amount of water and simmer for 10 minutes.'
+                },
+                time: '15分钟 / 15 min'
+            },
+            {
+                title: { zh: '收汁装盘', en: 'Reduce Sauce and Serve' },
+                description: {
+                    zh: '大火收汁，撒上葱花，装入大盘中即可。',
+                    en: 'Turn up heat to reduce sauce, sprinkle with green onions, serve in large platter.'
+                },
+                time: '5分钟 / 5 min'
+            }
+        ],
+        culture: {
+            zh: '全家福是婚宴和寿宴上的传统大盘菜，通常包含海鲜、肉类和蔬菜，象征着家人团圆与和谐。这道菜的名称寓意着"全家团圆、幸福美满"，是宴席上必不可少的菜品。全家福的制作需要多种食材的搭配，每一种食材都有其特殊的寓意：大虾象征着"红红火火"，海参象征着"长寿"，鸡肉象征着"吉祥"，猪肉象征着"富贵"，香菇象征着"圆满"，西兰花象征着"生机"。在婚宴上，全家福象征着新人的幸福美满；在寿宴上，全家福则象征着寿星的长寿健康。这道菜不仅味道鲜美，更承载着人们对美好生活的向往和祝福。',
+            en: 'Family Reunion Platter is a traditional large platter served at weddings and birthday banquets, usually featuring seafood, meat, and vegetables, symbolizing family reunion, unity, and harmony. The name of this dish implies "family reunion and happiness," making it an essential dish at banquets. The preparation of Family Reunion Platter requires the combination of various ingredients, each with its special meaning: shrimp symbolizes "prosperity," sea cucumber symbolizes "longevity," chicken symbolizes "good luck," pork symbolizes "wealth," shiitake mushrooms symbolize "completeness," and broccoli symbolizes "vitality." At weddings, Family Reunion Platter symbolizes the happiness and completeness of the newlyweds; at birthday banquets, it symbolizes the longevity and health of the birthday person. This dish is not only delicious but also carries people\'s longing and blessings for a better life.'
+        }
+    }
+];
+
+let communityPosts = [
+    {
+        id: 1,
+        user: {
+            name: '美食爱好者',
+            avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Felix'
+        },
+        image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500',
+        caption: {
+            zh: '第一次做宫保鸡丁，味道还不错！虽然卖相一般，但是家人都说好吃 😊',
+            en: 'First time making Kung Pao Chicken, tastes pretty good! Although it doesn\'t look perfect, my family said it\'s delicious 😊'
+        },
+        likes: 42,
+        comments: [
+            {
+                user: '小厨娘',
+                text: {
+                    zh: '看起来很棒！我也想试试',
+                    en: 'Looks great! I want to try it too'
+                }
+            }
+        ],
+        timestamp: new Date(Date.now() - 86400000).toISOString()
+    },
+    {
+        id: 2,
+        user: {
+            name: '留学生小王',
+            avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Lucy'
+        },
+        image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500',
+        caption: {
+            zh: '在海外也能做出正宗的红烧肉！感谢这个APP的详细教程 🙏',
+            en: 'Can make authentic Braised Pork Belly even overseas! Thanks to this app\'s detailed tutorials 🙏'
+        },
+        likes: 67,
+        comments: [],
+        timestamp: new Date(Date.now() - 172800000).toISOString()
+    },
+    {
+        id: 3,
+        user: {
+            name: '新手厨师',
+            avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Max'
+        },
+        image: 'https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500',
+        caption: {
+            zh: '西红柿炒鸡蛋，简单但经典！每次做都感觉像回到了家 ❤️',
+            en: 'Tomato and Egg Stir-fry, simple but classic! Every time I make it, it feels like coming home ❤️'
+        },
+        likes: 89,
+        comments: [
+            {
+                user: '美食家',
+                text: {
+                    zh: '这道菜真的很有家的味道',
+                    en: 'This dish really has the taste of home'
+                }
+            },
+            {
+                user: 'CookingLover',
+                text: {
+                    zh: '我也经常做这个，太治愈了',
+                    en: 'I make this often too, so healing'
+                }
+            }
+        ],
+        timestamp: new Date(Date.now() - 259200000).toISOString()
     }
 ];
 
@@ -1266,6 +2909,7 @@ let currentPage = 'home';
 let currentRecipeId = null;
 let currentCultureCategory = null;
 let currentScenario = null;
+let previousPage = null;
 
 function t(key) {
     const keys = key.split('.');
@@ -1285,6 +2929,7 @@ function setLanguage(lang) {
 }
 
 function navigateTo(page, recipeId = null, cultureCategory = null, scenario = null) {
+    previousPage = currentPage;
     currentPage = page;
     currentRecipeId = recipeId;
     currentCultureCategory = cultureCategory;
@@ -1302,17 +2947,24 @@ function render() {
                 <nav>
                     <a href="#" class="logo" onclick="navigateTo('home'); return false;">
                         <span>🥢</span>
-                        <span>中华美食 / Chinese Cuisine</span>
+                        <span>口袋中餐 / Pocket Chinese</span>
                     </a>
                     <ul class="nav-links">
                         <li><a href="#" onclick="navigateTo('home'); return false;" class="${currentPage === 'home' ? 'active' : ''}">${t('nav.home')}</a></li>
                         <li><a href="#" onclick="navigateTo('scenarios'); return false;" class="${currentPage === 'scenarios' ? 'active' : ''}">${t('nav.scenarios')}</a></li>
                         <li><a href="#" onclick="navigateTo('recipes', null, null, null); return false;" class="${currentPage === 'recipes' ? 'active' : ''}">${t('nav.recipes')}</a></li>
                         <li><a href="#" onclick="navigateTo('culture'); return false;" class="${currentPage === 'culture' ? 'active' : ''}">${t('nav.culture')}</a></li>
+                        <li><a href="#" onclick="navigateTo('community'); return false;" class="${currentPage === 'community' ? 'active' : ''}">${t('nav.community')}</a></li>
                     </ul>
-                    <div class="lang-switch">
-                        <button class="lang-btn ${currentLang === 'zh' ? 'active' : ''}" data-lang="zh" onclick="setLanguage('zh')">中文</button>
-                        <button class="lang-btn ${currentLang === 'en' ? 'active' : ''}" data-lang="en" onclick="setLanguage('en')">EN</button>
+                    <div class="header-right">
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="搜索菜品..." onkeyup="handleSearch(event)">
+                            <button onclick="performSearch()">搜索</button>
+                        </div>
+                        <div class="lang-switch">
+                            <button class="lang-btn ${currentLang === 'zh' ? 'active' : ''}" data-lang="zh" onclick="setLanguage('zh')">中文</button>
+                            <button class="lang-btn ${currentLang === 'en' ? 'active' : ''}" data-lang="en" onclick="setLanguage('en')">EN</button>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -1333,6 +2985,10 @@ function render() {
         } else {
             content += renderCulturePage();
         }
+    } else if (currentPage === 'festivalCategories') {
+        content += renderFestivalCategoriesPage();
+    } else if (currentPage === 'community') {
+        content += renderCommunityPage();
     }
 
     content += `
@@ -1373,7 +3029,7 @@ function renderHomePage() {
                             <p>${t('scenarios.potluck.description')}</p>
                         </div>
                     </div>
-                    <div class="scenario-card" onclick="navigateTo('recipes', null, null, 'festival')">
+                    <div class="scenario-card" onclick="navigateTo('festivalCategories')">
                         <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400" alt="${t('scenarios.festival.title')}">
                         <div class="scenario-card-content">
                             <h3>${t('scenarios.festival.title')}</h3>
@@ -1385,6 +3041,13 @@ function renderHomePage() {
                         <div class="scenario-card-content">
                             <h3>${t('scenarios.beginner.title')}</h3>
                             <p>${t('scenarios.beginner.description')}</p>
+                        </div>
+                    </div>
+                    <div class="scenario-card" onclick="navigateTo('recipes', null, null, 'vegetarian')">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400" alt="${t('scenarios.vegetarian.title')}">
+                        <div class="scenario-card-content">
+                            <h3>${t('scenarios.vegetarian.title')}</h3>
+                            <p>${t('scenarios.vegetarian.description')}</p>
                         </div>
                     </div>
                 </div>
@@ -1403,6 +3066,223 @@ function renderHomePage() {
             </div>
         </section>
     `;
+}
+
+function renderCommunityPage() {
+    return `
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">${t('community.title')}</h2>
+                <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">${t('community.subtitle')}</p>
+                
+                <div class="community-header">
+                    <button class="share-button" onclick="openShareModal()">${t('community.shareButton')}</button>
+                </div>
+                
+                ${communityPosts.length === 0 ? `
+                    <div class="no-posts">
+                        <p>${t('community.noPosts')}</p>
+                    </div>
+                ` : `
+                    <div class="community-grid">
+                        ${communityPosts.map(post => renderCommunityPost(post)).join('')}
+                    </div>
+                `}
+            </div>
+        </section>
+        
+        <div id="share-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeShareModal()">&times;</span>
+                <h3>${t('community.shareButton')}</h3>
+                <div class="share-form">
+                    <div class="form-group">
+                        <label>${t('community.uploadImage')}</label>
+                        <input type="file" id="share-image" accept="image/*" onchange="previewImage(event)">
+                        <div id="image-preview" class="image-preview"></div>
+                    </div>
+                    <div class="form-group">
+                        <label>${t('community.writeCaption')}</label>
+                        <textarea id="share-caption" rows="4" placeholder="${t('community.writeCaption')}"></textarea>
+                    </div>
+                    <button class="post-button" onclick="submitPost()">${t('community.postButton')}</button>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function renderCommunityPost(post) {
+    const timeAgo = getTimeAgo(post.timestamp);
+    return `
+        <div class="community-post">
+            <div class="post-header">
+                <img src="${post.user.avatar}" alt="${post.user.name}" class="user-avatar">
+                <div class="user-info">
+                    <h4>${post.user.name}</h4>
+                    <span class="post-time">${timeAgo}</span>
+                </div>
+            </div>
+            <img src="${post.image}" alt="Post image" class="post-image">
+            <div class="post-content">
+                <p class="post-caption">${post.caption[currentLang]}</p>
+                <div class="post-actions">
+                    <button class="action-button" onclick="likePost(${post.id})">
+                        <span>❤️</span>
+                        <span class="action-count">${post.likes}</span>
+                    </button>
+                    <button class="action-button" onclick="toggleComments(${post.id})">
+                        <span>💬</span>
+                        <span class="action-count">${post.comments.length}</span>
+                    </button>
+                    <button class="action-button" onclick="sharePost(${post.id})">
+                        <span>📤</span>
+                    </button>
+                </div>
+                <div id="comments-${post.id}" class="comments-section" style="display: none;">
+                    <div class="comments-list">
+                        ${post.comments.map(comment => `
+                            <div class="comment">
+                                <span class="comment-user">${comment.user}:</span>
+                                <span class="comment-text">${comment.text[currentLang]}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="add-comment">
+                        <input type="text" id="comment-input-${post.id}" placeholder="${t('community.comment')}...">
+                        <button onclick="addComment(${post.id})">发送</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function getTimeAgo(timestamp) {
+    const now = new Date();
+    const postDate = new Date(timestamp);
+    const diffInMs = now - postDate;
+    const diffInDays = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
+    
+    if (diffInDays === 0) {
+        const diffInHours = Math.floor(diffInMs / (1000 * 60 * 60));
+        if (diffInHours === 0) {
+            const diffInMinutes = Math.floor(diffInMs / (1000 * 60));
+            return diffInMinutes < 1 ? '刚刚' : `${diffInMinutes}分钟前`;
+        }
+        return `${diffInHours}小时前`;
+    } else if (diffInDays === 1) {
+        return '昨天';
+    } else if (diffInDays < 7) {
+        return `${diffInDays}天前`;
+    } else {
+        return postDate.toLocaleDateString();
+    }
+}
+
+function openShareModal() {
+    document.getElementById('share-modal').style.display = 'block';
+}
+
+function closeShareModal() {
+    document.getElementById('share-modal').style.display = 'none';
+    document.getElementById('share-image').value = '';
+    document.getElementById('share-caption').value = '';
+    document.getElementById('image-preview').innerHTML = '';
+}
+
+function previewImage(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            document.getElementById('image-preview').innerHTML = `<img src="${e.target.result}" alt="Preview">`;
+        };
+        reader.readAsDataURL(file);
+    }
+}
+
+function submitPost() {
+    const imageInput = document.getElementById('share-image');
+    const captionInput = document.getElementById('share-caption');
+    
+    if (!imageInput.files[0] || !captionInput.value.trim()) {
+        alert('请上传图片并填写分享内容');
+        return;
+    }
+    
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        const newPost = {
+            id: communityPosts.length + 1,
+            user: {
+                name: '我',
+                avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Me'
+            },
+            image: e.target.result,
+            caption: {
+                zh: captionInput.value,
+                en: captionInput.value
+            },
+            likes: 0,
+            comments: [],
+            timestamp: new Date().toISOString()
+        };
+        
+        communityPosts.unshift(newPost);
+        closeShareModal();
+        render();
+    };
+    reader.readAsDataURL(imageInput.files[0]);
+}
+
+function likePost(postId) {
+    const post = communityPosts.find(p => p.id === postId);
+    if (post) {
+        post.likes++;
+        render();
+    }
+}
+
+function toggleComments(postId) {
+    const commentsSection = document.getElementById(`comments-${postId}`);
+    if (commentsSection) {
+        commentsSection.style.display = commentsSection.style.display === 'none' ? 'block' : 'none';
+    }
+}
+
+function addComment(postId) {
+    const input = document.getElementById(`comment-input-${postId}`);
+    const text = input.value.trim();
+    
+    if (!text) return;
+    
+    const post = communityPosts.find(p => p.id === postId);
+    if (post) {
+        post.comments.push({
+            user: '我',
+            text: {
+                zh: text,
+                en: text
+            }
+        });
+        render();
+    }
+}
+
+function sharePost(postId) {
+    const post = communityPosts.find(p => p.id === postId);
+    if (post) {
+        if (navigator.share) {
+            navigator.share({
+                title: post.caption[currentLang],
+                text: post.caption[currentLang],
+                url: window.location.href
+            });
+        } else {
+            alert('分享功能已复制到剪贴板');
+        }
+    }
 }
 
 function renderScenariosPage() {
@@ -1426,7 +3306,7 @@ function renderScenariosPage() {
                             <p>${t('scenarios.potluck.description')}</p>
                         </div>
                     </div>
-                    <div class="scenario-card" onclick="navigateTo('recipes', null, null, 'festival')">
+                    <div class="scenario-card" onclick="navigateTo('festivalCategories')">
                         <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400" alt="${t('scenarios.festival.title')}">
                         <div class="scenario-card-content">
                             <h3>${t('scenarios.festival.title')}</h3>
@@ -1440,6 +3320,83 @@ function renderScenariosPage() {
                             <p>${t('scenarios.beginner.description')}</p>
                         </div>
                     </div>
+                    <div class="scenario-card" onclick="navigateTo('recipes', null, null, 'vegetarian')">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400" alt="${t('scenarios.vegetarian.title')}">
+                        <div class="scenario-card-content">
+                            <h3>${t('scenarios.vegetarian.title')}</h3>
+                            <p>${t('scenarios.vegetarian.description')}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    `;
+}
+
+function renderFestivalCategoriesPage() {
+    return `
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">${t('scenarios.festival.title')}</h2>
+                <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">${t('scenarios.festival.description')}</p>
+                
+                <div class="festival-categories">
+                    <div class="festival-category">
+                        <h3>特别节日 / Special Festivals</h3>
+                        <div class="festival-grid">
+                            <div class="festival-card" onclick="navigateTo('recipes', null, null, 'springFestival')">
+                                <div class="festival-icon">🧧</div>
+                                <h4>${t('scenarios.springFestival.title')}</h4>
+                                <p>${t('scenarios.springFestival.description')}</p>
+                            </div>
+                            <div class="festival-card" onclick="navigateTo('recipes', null, null, 'lanternFestival')">
+                                <div class="festival-icon">🏮</div>
+                                <h4>${t('scenarios.lanternFestival.title')}</h4>
+                                <p>${t('scenarios.lanternFestival.description')}</p>
+                            </div>
+                            <div class="festival-card" onclick="navigateTo('recipes', null, null, 'dragonBoatFestival')">
+                                <div class="festival-icon">🐉</div>
+                                <h4>${t('scenarios.dragonBoatFestival.title')}</h4>
+                                <p>${t('scenarios.dragonBoatFestival.description')}</p>
+                            </div>
+                            <div class="festival-card" onclick="navigateTo('recipes', null, null, 'midAutumnFestival')">
+                                <div class="festival-icon">🌕</div>
+                                <h4>${t('scenarios.midAutumnFestival.title')}</h4>
+                                <p>${t('scenarios.midAutumnFestival.description')}</p>
+                            </div>
+                            <div class="festival-card" onclick="navigateTo('recipes', null, null, 'doubleNinthFestival')">
+                                <div class="festival-icon">🏔️</div>
+                                <h4>${t('scenarios.doubleNinthFestival.title')}</h4>
+                                <p>${t('scenarios.doubleNinthFestival.description')}</p>
+                            </div>
+                            <div class="festival-card" onclick="navigateTo('recipes', null, null, 'qingmingFestival')">
+                                <div class="festival-icon">🌸</div>
+                                <h4>${t('scenarios.qingmingFestival.title')}</h4>
+                                <p>${t('scenarios.qingmingFestival.description')}</p>
+                            </div>
+                            <div class="festival-card" onclick="navigateTo('recipes', null, null, 'winterSolstice')">
+                                <div class="festival-icon">❄️</div>
+                                <h4>${t('scenarios.winterSolstice.title')}</h4>
+                                <p>${t('scenarios.winterSolstice.description')}</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="festival-category">
+                        <h3>热门场合 / Popular Occasions</h3>
+                        <div class="festival-grid">
+                            <div class="festival-card" onclick="navigateTo('recipes', null, null, 'wedding')">
+                                <div class="festival-icon">💒</div>
+                                <h4>${t('scenarios.wedding.title')}</h4>
+                                <p>${t('scenarios.wedding.description')}</p>
+                            </div>
+                            <div class="festival-card" onclick="navigateTo('recipes', null, null, 'birthday')">
+                                <div class="festival-icon">🎂</div>
+                                <h4>${t('scenarios.birthday.title')}</h4>
+                                <p>${t('scenarios.birthday.description')}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1447,17 +3404,30 @@ function renderScenariosPage() {
 }
 
 function renderRecipesPage() {
-    const filteredRecipes = currentScenario 
-        ? recipes.filter(recipe => Array.isArray(recipe.scenario) ? recipe.scenario.includes(currentScenario) : recipe.scenario === currentScenario)
-        : recipes;
+    const filteredRecipes = filterRecipes();
     
-    const pageTitle = currentScenario 
+    let pageTitle = currentScenario 
         ? t(`scenarios.${currentScenario}.title`)
         : t('recipes.title');
+    
+    if (searchQuery) {
+        pageTitle = `搜索结果: ${searchQuery}`;
+    }
+    
+    const festivalScenarios = ['springFestival', 'lanternFestival', 'dragonBoatFestival', 'midAutumnFestival', 'doubleNinthFestival', 'qingmingFestival', 'winterSolstice', 'wedding', 'birthday'];
+    const isFestivalPage = currentScenario && festivalScenarios.includes(currentScenario);
     
     return `
         <section class="section">
             <div class="container">
+                ${isFestivalPage ? `
+                    <div style="margin-bottom: 1rem;">
+                        <a href="#" onclick="navigateTo('festivalCategories'); return false;" style="display: inline-flex; align-items: center; color: var(--accent-color); text-decoration: none; font-size: 0.9rem;">
+                            <span style="margin-right: 0.5rem;">←</span>
+                            <span>${t('scenarios.festival.title')}</span>
+                        </a>
+                    </div>
+                ` : ''}
                 <h2 class="section-title">${pageTitle}</h2>
                 <div class="recipe-grid">
                     ${filteredRecipes.map(recipe => renderRecipeCard(recipe)).join('')}
@@ -1468,9 +3438,35 @@ function renderRecipesPage() {
 }
 
 function renderRecipeCard(recipe) {
-    const difficultyText = t(`recipes.${recipe.difficulty}`);
+    let stars = '';
+    switch (recipe.difficulty) {
+        case 'beginner':
+            stars = '⭐';
+            break;
+        case 'intermediate':
+            stars = '⭐⭐⭐';
+            break;
+        case 'advanced':
+            stars = '⭐⭐⭐⭐⭐';
+            break;
+        default:
+            stars = '⭐';
+    }
+    
+    let peppers = '';
+    const spiciness = recipe.spiciness || 0;
+    for (let i = 0; i < spiciness; i++) {
+        peppers += '🌶️';
+    }
+    
+    const spicinessText = spiciness > 0 
+        ? (currentLang === 'zh' ? `默认${spiciness}辣，可根据个人口味调节` : `Default ${spiciness} spicy, adjustable to taste`)
+        : '';
+    
+    const isSmallCard = recipe.id === 24;
+    
     return `
-        <div class="recipe-card" onclick="navigateTo('recipeDetail', ${recipe.id})">
+        <div class="recipe-card ${isSmallCard ? 'recipe-card-small' : ''}" onclick="navigateTo('recipeDetail', ${recipe.id})">
             <img src="${recipe.image}" alt="${recipe.name[currentLang]}">
             <div class="recipe-card-content">
                 <h3>${recipe.name[currentLang]}</h3>
@@ -1478,17 +3474,91 @@ function renderRecipeCard(recipe) {
                     <span>⏱️ ${recipe.time}</span>
                     <span>👥 ${recipe.servings}</span>
                 </div>
-                <span class="difficulty">${difficultyText}</span>
+                <div class="difficulty-container">
+                    <span class="difficulty">${stars}</span>
+                    ${peppers ? `<span class="spiciness" title="${spicinessText}">${peppers}</span>` : ''}
+                </div>
             </div>
         </div>
     `;
+}
+
+let searchQuery = '';
+
+function handleSearch(event) {
+    if (event.key === 'Enter') {
+        performSearch();
+    }
+}
+
+function performSearch() {
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchQuery = searchInput.value.trim().toLowerCase();
+        currentPage = 'recipes';
+        currentScenario = null;
+        render();
+    }
+}
+
+function filterRecipes() {
+    let filteredRecipes = currentScenario 
+        ? recipes.filter(recipe => Array.isArray(recipe.scenario) ? recipe.scenario.includes(currentScenario) : recipe.scenario === currentScenario)
+        : recipes;
+    
+    if (searchQuery) {
+        const recipeAliases = {
+            '西红柿炒蛋': ['西红柿炒鸡蛋', '番茄炒蛋', '番茄炒鸡蛋'],
+            '蛋炒饭': ['炒饭'],
+            '凉拌黄瓜': ['拍黄瓜'],
+            '糖拌番茄': ['番茄拌糖', '白糖番茄'],
+            '糖醋排骨': ['酸甜排骨'],
+            '宫保鸡丁': ['宫爆鸡丁'],
+            '鱼香茄子': ['鱼香茄条']
+        };
+        
+        filteredRecipes = filteredRecipes.filter(recipe => {
+            const nameZh = recipe.name.zh.toLowerCase();
+            const nameEn = recipe.name.en.toLowerCase();
+            const descZh = recipe.description.zh.toLowerCase();
+            const descEn = recipe.description.en.toLowerCase();
+            const query = searchQuery.toLowerCase();
+            
+            if (nameZh.includes(query) || nameEn.includes(query) || descZh.includes(query) || descEn.includes(query)) {
+                return true;
+            }
+            
+            for (const [key, aliases] of Object.entries(recipeAliases)) {
+                if (key.includes(query) || aliases.some(alias => alias.includes(query))) {
+                    return aliases.includes(nameZh) || key === nameZh;
+                }
+            }
+            
+            return false;
+        });
+    }
+    
+    return filteredRecipes;
 }
 
 function renderRecipeDetailPage() {
     const recipe = recipes.find(r => r.id === currentRecipeId);
     if (!recipe) return '';
 
-    const difficultyText = t(`recipes.${recipe.difficulty}`);
+    let difficultyStars = '';
+    switch (recipe.difficulty) {
+        case 'beginner':
+            difficultyStars = '⭐';
+            break;
+        case 'intermediate':
+            difficultyStars = '⭐⭐⭐';
+            break;
+        case 'advanced':
+            difficultyStars = '⭐⭐⭐⭐⭐';
+            break;
+        default:
+            difficultyStars = '⭐';
+    }
     const videoSection = recipe.video ? `
         <div class="recipe-detail-section">
             <h2>${t('recipeDetail.video')}</h2>
@@ -1498,13 +3568,14 @@ function renderRecipeDetailPage() {
                     ${currentLang === 'zh' ? '您的浏览器不支持视频播放。' : 'Your browser does not support video playback.'}
                 </video>
             </div>
+            <p class="portion-note">${currentLang === 'zh' ? '食材的分量记得根据个人情况或参考食材清单减少哦' : 'Remember to adjust ingredient portions according to your personal needs or refer to the ingredient list'}</p>
         </div>
     ` : '';
 
     return `
         <section class="section">
             <div class="container">
-                <a href="#" class="back-btn" onclick="navigateTo('recipes', null, null, null); return false;">
+                <a href="#" class="back-btn" onclick="navigateTo('recipes', null, null, ${currentScenario ? `'${currentScenario}'` : 'null'}); return false;">
                     ← ${t('recipeDetail.back')}
                 </a>
                 
@@ -1516,7 +3587,7 @@ function renderRecipeDetailPage() {
                             <div class="meta">
                                 <span>⏱️ ${t('recipes.time')}: ${recipe.time}</span>
                                 <span>👥 ${t('recipes.servings')}: ${recipe.servings}</span>
-                                <span class="difficulty">${t('recipes.difficulty')}: ${difficultyText}</span>
+                                <span class="difficulty">${t('recipes.difficulty')}: ${difficultyStars}</span>
                             </div>
                             <p>${recipe.description[currentLang]}</p>
                         </div>
@@ -1538,6 +3609,21 @@ function renderRecipeDetailPage() {
                             `).join('')}
                         </ul>
                     </div>
+                    
+                    ${recipe.ingredients.some(ing => ing.substitution) ? `
+                    <div class="recipe-detail-section">
+                        <h2>${t('recipeDetail.substitutionGuide')}</h2>
+                        <p>${t('recipeDetail.substitutionGuideDesc')}</p>
+                        <ul class="ingredients-list">
+                            ${recipe.ingredients.filter(ing => ing.substitution).map(ing => `
+                                <li>
+                                    <span class="ingredient-name">${ing.name[currentLang]}</span>
+                                    <span>${ing.substitution[currentLang]}</span>
+                                </li>
+                            `).join('')}
+                        </ul>
+                    </div>
+                    ` : ''}
                     
                     <div class="recipe-detail-section">
                         <h2>${t('recipeDetail.steps')}</h2>
@@ -1815,10 +3901,10 @@ function renderCultureCategoryPage(category) {
                     <div class="recipe-detail-section">
                         <h2>中秋月饼 / Mid-Autumn Festival Mooncakes</h2>
                         <p style="margin-bottom: 1rem;">
-                            中秋节是仅次于春节的第二大传统节日，月饼是必不可少的节日食品。月饼象征团圆，家人围坐赏月吃月饼，寄托对远方亲人的思念。月饼种类繁多，有广式、苏式、京式等不同流派，内馅也有豆沙、莲蓉、五仁等多种选择。
+                            中秋节是仅次于春节的第二大传统节日，月饼是必不可少的节日食品。月饼象征团圆，家人围坐赏月吃月饼，寄托对远方亲人的思念。中秋节有着丰富的神话传说，最著名的是嫦娥奔月的故事。相传嫦娥偷吃了不死药，飞到了月宫，从此与丈夫后羿分离。这个凄美的故事寄托了人们对美好生活的向往和对团圆的期盼。古诗词中也有许多描写中秋的名句，如苏轼的《水调歌头》："但愿人长久，千里共婵娟"，表达了对远方亲人的思念和对团圆的美好愿景。月饼种类繁多，有广式、苏式、京式等不同流派，内馅也有豆沙、莲蓉、五仁等多种选择。
                         </p>
                         <p style="margin-bottom: 1rem;">
-                            The Mid-Autumn Festival is the second most important traditional holiday after the Spring Festival, and mooncakes are essential festival foods. Mooncakes symbolize reunion, and families gather to admire the moon and eat mooncakes, expressing longing for distant loved ones. There are many types of mooncakes, including Cantonese, Suzhou, and Beijing styles, with various fillings such as red bean paste, lotus seed paste, and five nuts.
+                            The Mid-Autumn Festival is the second most important traditional holiday after the Spring Festival, and mooncakes are essential festival foods. Mooncakes symbolize reunion, and families gather to admire the moon and eat mooncakes, expressing longing for distant loved ones. The Mid-Autumn Festival has rich mythological legends, the most famous being the story of Chang'e flying to the moon. Legend has it that Chang'e stole the elixir of immortality and flew to the Moon Palace, separating from her husband Hou Yi forever. This beautiful yet tragic story embodies people's yearning for a better life and hope for reunion. Ancient poetry also contains many famous lines describing the Mid-Autumn Festival, such as Su Shi's "Water Melody Song": "May we all be blessed with longevity, though far apart, we still share the beauty of the moon together," expressing longing for distant relatives and beautiful vision of reunion. There are many types of mooncakes, including Cantonese, Suzhou, and Beijing styles, with various fillings such as red bean paste, lotus seed paste, and five nuts.
                         </p>
                         <div class="festival-dishes">
                             <strong>月饼种类 / Mooncake Varieties：</strong><br>
