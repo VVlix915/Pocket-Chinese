@@ -230,8 +230,8 @@ const recipes = [
             zh: '最经典的家常菜，酸甜可口，营养丰富',
             en: 'Classic home-style dish, sweet and sour, nutritious'
         },
-        image: '番茄炒蛋封面.jpg',
-        video: 'videos/番茄炒蛋.mp4',
+        image: 'assets/images/covers/番茄炒蛋封面.jpg',
+        video: 'assets/videos/番茄炒蛋.mp4',
         difficulty: 'beginner',
         spiciness: 0,
         time: '15分钟 / 15 min',
@@ -306,7 +306,7 @@ const recipes = [
         culture: {
             zh: '番茄炒蛋是一道"不知道吃什么时就会出现"的菜。它常常出现在忙碌的一天结束后，或者家里食材不多的时候。只要有鸡蛋和番茄，就能很快做出一顿饭，因此在很多中国家庭中，它是最常被拿出来应急、却又不会被嫌弃的选择。这道菜很少被严格地按照食谱来做。番茄是切块还是切小，鸡蛋先炒还是后放，每个人家里都有不同的做法。有的人喜欢偏甜，有的人更偏酸，这些差异并不会被纠正，反而被视为"各家各味"的一部分。正因为做法自由，番茄炒蛋往往承载着个人记忆，而不是统一标准。在很多情况下，番茄炒蛋并不是用来招待客人的菜，而是留给自己、家人或熟人吃的菜。它常出现在普通的工作日、独自在家的夜晚，或是身体不太舒服、只想吃点清淡食物的时候。番茄炒蛋更像是一道与日常生活紧密相连的菜，代表的是稳定、熟悉和持续的生活节奏。',
             en: 'Tomato and Egg Stir-fry is a dish that "appears when you don\'t know what to eat." It often appears at the end of a busy day, or when there aren\'t many ingredients at home. As long as there are eggs and tomatoes, a meal can be made quickly, so in many Chinese families, it is the most frequently chosen emergency option that is never rejected. This dish is rarely prepared strictly according to recipes. Whether tomatoes are cut into chunks or small pieces, whether eggs are fried first or added later, every household has its own approach. Some prefer it sweeter, others more sour - these differences are not corrected but instead seen as part of "each family\'s unique flavor." Because the preparation is free and flexible, Tomato and Egg Stir-fry often carries personal memories rather than a unified standard. In many cases, this dish is not meant for entertaining guests but is reserved for oneself, family, or close friends. It often appears on ordinary weekdays, on nights spent alone at home, or when one isn\'t feeling well and just wants something light. Tomato and Egg Stir-fry is more like a dish closely connected to daily life, representing stability, familiarity, and a continuous rhythm of life.',
-            illustration: '番茄炒蛋-文化.png'
+            illustration: 'assets/images/cultural/番茄炒蛋-文化.png'
         }
     },
     {
@@ -319,7 +319,7 @@ const recipes = [
             zh: '川菜代表，麻辣鲜香，酸甜适中',
             en: 'Classic Sichuan dish, spicy and savory, perfectly balanced'
         },
-        image: '宫保鸡丁封面.jpg',
+        image: 'assets/images/covers/宫保鸡丁封面.jpg',
         difficulty: 'intermediate',
         spiciness: 1,
         time: '25分钟 / 25 min',
@@ -419,7 +419,7 @@ const recipes = [
             zh: '肥而不腻，入口即化，传统名菜',
             en: 'Rich but not greasy, melts in your mouth, traditional classic'
         },
-        image: '红烧肉封面.jpg',
+        image: 'assets/images/covers/红烧肉封面.jpg',
         difficulty: 'advanced',
         spiciness: 0,
         time: '90分钟 / 90 min',
@@ -519,7 +519,7 @@ const recipes = [
             zh: '清淡鲜美，营养丰富，老少皆宜',
             en: 'Light and fresh, nutritious, suitable for all ages'
         },
-        image: '上汤娃娃菜封面.jpg',
+        image: 'assets/images/covers/上汤娃娃菜封面.jpg',
         difficulty: 'intermediate',
         spiciness: 0,
         time: '20分钟 / 20 min',
@@ -635,8 +635,8 @@ const recipes = [
             zh: '清爽开胃，简单易做，夏日必备',
             en: 'Refreshing and appetizing, simple to make, summer essential'
         },
-        image: '凉拌黄瓜封面.jpg',
-        video: 'videos/凉拌黄瓜2.mp4',
+        image: 'assets/images/covers/凉拌黄瓜封面.jpg',
+        video: 'assets/videos/凉拌黄瓜2.mp4',
         difficulty: 'beginner',
         spiciness: 0,
         time: '10分钟 / 10 min',
@@ -732,7 +732,7 @@ const recipes = [
         culture: {
             zh: '凉拌黄瓜并不是一道有明确起源的"名菜"，它更像是一种中国家庭里默认存在的做法。**在很多人的日常经验中，只要桌上有热菜、有油腻的菜，就很自然会出现一盘凉拌黄瓜，用来让整顿饭吃起来更清爽一些。它不追求复杂步骤，也很少被当作主角，却几乎不会缺席。拍一拍黄瓜，加点蒜、盐、醋和香油，有人喜欢酸一点，有人偏清淡，做法因人而异，没有标准答案。正因为如此，凉拌黄瓜体现的是中餐里很生活化的一面：做菜不一定要精确复刻，而是根据当下的食材、天气和口味去调整。对中国人来说，这道菜更多关联的是"日常""平衡"和"随手就能完成的一餐"，而不是技巧或仪式感。',
             en: 'Cucumber Salad is not a famous dish with a clear origin; rather, it is more like a default preparation in Chinese households. In many people\'s daily experience, as long as there are hot dishes or greasy dishes on the table, a plate of cucumber salad naturally appears to make the whole meal taste more refreshing. It does not pursue complex steps and is rarely the main focus, yet it is almost never absent. Smash the cucumber, add garlic, salt, vinegar, and sesame oil - some like it more sour, others prefer it lighter, the method varies from person to person, and there is no standard answer. Because of this, cucumber salad embodies a very down-to-earth aspect of Chinese cuisine: cooking does not necessarily require precise replication, but rather adjustment based on current ingredients, weather, and taste. For Chinese people, this dish is more associated with "daily life," "balance," and "a meal that can be completed effortlessly," rather than technique or ritual.',
-            illustration: '凉拌黄瓜-文化.jpg'
+            illustration: 'assets/images/cultural/凉拌黄瓜-文化.jpg'
         }
     },
     {
@@ -745,8 +745,8 @@ const recipes = [
             zh: '酸甜可口，色泽红亮，老少皆宜',
             en: 'Sweet and sour, bright red color, loved by all ages'
         },
-        image: '糖醋排骨封面.jpg',
-        video: 'videos/糖醋排骨更新版.mp4',
+        image: 'assets/images/covers/糖醋排骨封面.jpg',
+        video: 'assets/videos/糖醋排骨更新版.mp4',
         difficulty: 'intermediate',
         spiciness: 0,
         time: '45分钟 / 45 min',
@@ -858,7 +858,7 @@ const recipes = [
         culture: {
             zh: '糖醋排骨是中国传统名菜之一，属于淮扬菜系，也是那种"上桌就会被夹走"的必点菜。不论是家庭聚餐，还是请朋友到家里做客，它几乎从不出错。酸甜的味道让小孩爱不释口，大人也不会觉得腻，因此常被当作"安全选择"。\n\n做糖醋排骨的时候，关键并不在于死记配方，而在于边做边调整——酸一点还是甜一点，都可以根据个人口味来掌握。很多中国人做这道菜，都是凭感觉判断什么时候该加糖，什么时候该收汁。\n\n在海外，糖醋排骨也常是人们认识中餐的第一步。味道直观，不需要预先理解太多文化背景。对中国人而言，这道菜常常与"热闹""共享"联系在一起，是一盘适合大家围坐一起分享的佳肴。著名作家张爱玲在小说《沉香屑·第一炉香》中甚至将糖醋排骨比作"美人"，写道："如果湘粤一带深目削颊的美人是糖醋排骨，上海女人就是粉蒸肉。"可见，这道菜在文人心中也占有独特地位。',
             en: 'Sweet and Sour Pork Ribs is one of China\'s traditional dishes, belonging to Huaiyang cuisine, and is a kind of dish that everyone reaches for as soon as it hits the table. Whether at a family gathering or when hosting friends at home, it almost never fails. Its sweet-and-sour flavor makes children love it instantly, while adults don\'t find it heavy or greasy, which is why it is often considered a "safe choice."\n\nThe key to making Sweet and Sour Pork Ribs isn\'t memorizing a fixed recipe, but adjusting as you cook—making it slightly more sour or sweeter according to personal taste. Many Chinese cooks make this dish by feel, deciding when to add sugar and when to reduce the sauce.\n\nOverseas, Sweet and Sour Pork Ribs is often one of the first Chinese dishes people try. Its flavor is straightforward, requiring no prior understanding of cultural context. For Chinese people, this dish is often associated with liveliness and sharing—a dish meant to be enjoyed together around the table. The famous writer Eileen Chang even compared Sweet and Sour Pork Ribs to a "beauty" in her novel The First Stove of Incense, writing: "If the beauties of Hunan and Guangdong are Sweet and Sour Pork Ribs, then Shanghai women are steamed pork with rice powder." This shows that this dish also holds a special place in the hearts of literati.',
-            illustration: '糖醋排骨-文化.png'
+            illustration: 'assets/images/cultural/糖醋排骨-文化.png'
         }
     },
     {
@@ -871,8 +871,8 @@ const recipes = [
             zh: '简单快手，葱香浓郁，上海经典',
             en: 'Simple and quick, rich scallion aroma, Shanghai classic'
         },
-        image: '葱油面封面.jpg',
-        video: 'videos/葱油面.mp4',
+        image: 'assets/images/covers/葱油面封面.jpg',
+        video: 'assets/videos/葱油面.mp4',
         difficulty: 'beginner',
         spiciness: 0,
         time: '15分钟 / 15 min',
@@ -967,7 +967,7 @@ const recipes = [
             zh: '外酥里嫩，鲜香多汁，聚会必备',
             en: 'Crispy outside, tender inside, juicy and flavorful'
         },
-        image: '锅贴封面.jpg',
+        image: 'assets/images/covers/锅贴封面.jpg',
         difficulty: 'intermediate',
         spiciness: 0,
         time: '30分钟 / 30 min',
@@ -1051,7 +1051,7 @@ const recipes = [
             zh: '麻辣鲜香，回味无穷，川菜经典',
             en: 'Spicy, numbing, flavorful, classic Sichuan dish'
         },
-        image: '口水鸡封面.jpg',
+        image: 'assets/images/covers/口水鸡封面.jpg',
         difficulty: 'intermediate',
         spiciness: 1,
         time: '40分钟 / 40 min',
@@ -1130,7 +1130,7 @@ const recipes = [
             zh: '鱼香浓郁，酸甜可口，下饭神器',
             en: 'Fish fragrant, sweet and sour, perfect with rice'
         },
-        image: '鱼香茄子封面.jpg',
+        image: 'assets/images/covers/鱼香茄子封面.jpg',
         difficulty: 'intermediate',
         spiciness: 1,
         time: '25分钟 / 25 min',
@@ -1214,7 +1214,7 @@ const recipes = [
             zh: '酸甜爽口，简单快手，夏季必备',
             en: 'Sweet and sour, refreshing, easy to make'
         },
-        image: '糖拌番茄封面.jpg',
+        image: 'assets/images/covers/糖拌番茄封面.jpg',
         difficulty: 'beginner',
         time: '5分钟 / 5 min',
         servings: '2人份 / 2 servings',
@@ -1264,7 +1264,7 @@ const recipes = [
             zh: '粒粒分明，鲜香可口，经典主食',
             en: 'Separate grains, fragrant and delicious, classic staple'
         },
-        image: '蛋炒饭封面.jpg',
+        image: 'assets/images/covers/蛋炒饭封面.jpg',
         difficulty: 'beginner',
         spiciness: 0,
         time: '15分钟 / 15 min',
@@ -1338,7 +1338,7 @@ const recipes = [
             zh: '麻辣鲜香，嫩滑可口，川菜经典',
             en: 'Spicy and numbing, tender and delicious, classic Sichuan dish'
         },
-        image: '麻婆豆腐封面.jpg',
+        image: 'assets/images/covers/麻婆豆腐封面.jpg',
         difficulty: 'intermediate',
         spiciness: 2,
         time: '20分钟 / 20 min',
@@ -1417,7 +1417,7 @@ const recipes = [
             zh: '酥脆可口，鲜香四溢，节日必备',
             en: 'Crispy, flavorful, essential for festivals'
         },
-        image: '春卷封面.jpg',
+        image: 'assets/images/covers/春卷封面.jpg',
         difficulty: 'intermediate',
         time: '30分钟 / 30 min',
         servings: '4人份 / 4 servings',
@@ -1490,7 +1490,7 @@ const recipes = [
             zh: '北方春节必备，象征财富，形似元宝',
             en: 'Essential for Northern Chinese Spring Festival, symbolizes wealth, shaped like ingots'
         },
-        image: '饺子封面.jpg',
+        image: 'assets/images/covers/饺子封面.jpg',
         difficulty: 'intermediate',
         spiciness: 0,
         time: '60分钟 / 60 min',
@@ -1574,7 +1574,7 @@ const recipes = [
             zh: '南方春节必备，象征年年高升',
             en: 'Essential for Southern Chinese Spring Festival, symbolizes advancement year after year'
         },
-        image: '年糕封面.jpg',
+        image: 'assets/images/covers/年糕封面.jpg',
         difficulty: 'intermediate',
         spiciness: 0,
         time: '40分钟 / 40 min',
@@ -1635,7 +1635,7 @@ const recipes = [
             zh: '春节必备，象征年年有余',
             en: 'Essential for Spring Festival, symbolizes surplus year after year'
         },
-        image: '松鼠桂鱼封面.jpg',
+        image: 'assets/images/covers/松鼠桂鱼封面.jpg',
         difficulty: 'advanced',
         spiciness: 0,
         time: '40分钟 / 40 min',
@@ -1719,7 +1719,7 @@ const recipes = [
             zh: '糯米球，甜馅，象征团圆',
             en: 'Glutinous rice balls with sweet filling, symbolizing reunion'
         },
-        image: '元宵封面.jpg',
+        image: 'assets/images/covers/元宵封面.jpg',
         difficulty: 'intermediate',
         spiciness: 0,
         time: '45分钟 / 45 min',
@@ -1793,7 +1793,7 @@ const recipes = [
             zh: '糯米包裹咸蛋黄和猪肉，咸香可口',
             en: 'Glutinous rice wrapped with salted egg yolk and pork, savory and delicious'
         },
-        image: '咸味蛋黄肉粽封面.jpg',
+        image: 'assets/images/covers/咸味蛋黄肉粽封面.jpg',
         difficulty: 'advanced',
         spiciness: 0,
         time: '120分钟 / 120 min',
@@ -1872,7 +1872,7 @@ const recipes = [
             zh: '糯米包裹蜜枣和豆沙，香甜软糯',
             en: 'Glutinous rice wrapped with honey dates and red bean paste, sweet and soft'
         },
-        image: '甜味蜜枣豆沙粽封面.jpg',
+        image: 'assets/images/covers/甜味蜜枣豆沙粽封面.jpg',
         difficulty: 'advanced',
         spiciness: 0,
         time: '120分钟 / 120 min',
@@ -1946,7 +1946,7 @@ const recipes = [
             zh: '经典广式月饼，莲蓉细腻，蛋黄香浓',
             en: 'Classic Cantonese mooncake, delicate lotus paste, rich egg yolk'
         },
-        image: '莲蓉蛋黄月饼封面.jpg',
+        image: 'assets/images/covers/莲蓉蛋黄月饼封面.jpg',
         difficulty: 'advanced',
         spiciness: 0,
         time: '180分钟 / 180 min',
@@ -2020,7 +2020,7 @@ const recipes = [
             zh: '传统口味，坚果丰富，香脆可口',
             en: 'Traditional flavor, rich in nuts, crispy and delicious'
         },
-        image: '五仁月饼封面.jpg',
+        image: 'assets/images/covers/五仁月饼封面.jpg',
         difficulty: 'advanced',
         spiciness: 0,
         time: '180分钟 / 180 min',
@@ -2112,7 +2112,7 @@ const recipes = [
             zh: '云南特色，火腿鲜香，咸甜适中',
             en: 'Yunnan specialty, savory ham, moderate sweet and salty'
         },
-        image: '云腿月饼封面.jpg',
+        image: 'assets/images/covers/云腿月饼封面.jpg',
         difficulty: 'advanced',
         spiciness: 0,
         time: '180分钟 / 180 min',
@@ -2194,7 +2194,7 @@ const recipes = [
             zh: '经典甜味，豆沙细腻，口感绵软',
             en: 'Classic sweet flavor, delicate red bean paste, soft texture'
         },
-        image: '豆沙月饼封面.jpg',
+        image: 'assets/images/covers/豆沙月饼封面.jpg',
         difficulty: 'advanced',
         spiciness: 0,
         time: '180分钟 / 180 min',
@@ -2276,7 +2276,7 @@ const recipes = [
             zh: '重阳节传统糕点，象征步步高升',
             en: 'Traditional Chongyang Festival pastry, symbolizing rising step by step'
         },
-        image: '重阳糕封面.jpg',
+        image: 'assets/images/covers/重阳糕封面.jpg',
         difficulty: 'intermediate',
         spiciness: 0,
         time: '90分钟 / 90 min',
@@ -2355,7 +2355,7 @@ const recipes = [
             zh: '清明节传统食品，艾草糯米，清香软糯',
             en: 'Traditional Qingming Festival food, mugwort and glutinous rice, fragrant and soft'
         },
-        image: '青团封面.jpg',
+        image: 'assets/images/covers/青团封面.jpg',
         difficulty: 'intermediate',
         spiciness: 0,
         time: '120分钟 / 120 min',
@@ -2442,7 +2442,7 @@ const recipes = [
             zh: '冬至北方传统，形似元宝，象征财富',
             en: 'Northern tradition for Winter Solstice, shaped like gold ingots, symbolizing wealth'
         },
-        image: '饺子封面.jpg',
+        image: 'assets/images/covers/饺子封面.jpg',
         difficulty: 'intermediate',
         spiciness: 0,
         time: '90分钟 / 90 min',
@@ -2534,7 +2534,7 @@ const recipes = [
             zh: '冬至南方传统，糯米团子，象征团圆',
             en: 'Southern tradition for Winter Solstice, glutinous rice balls, symbolizing reunion'
         },
-        image: '汤圆（南方）封面.jpg',
+        image: 'assets/images/covers/汤圆（南方）封面.jpg',
         difficulty: 'intermediate',
         spiciness: 0,
         time: '60分钟 / 60 min',
@@ -2616,7 +2616,7 @@ const recipes = [
             zh: '生日传统，面条细长，象征长寿健康',
             en: 'Birthday tradition, long noodles, symbolizing longevity and health'
         },
-        image: '长寿面封面.jpg',
+        image: 'assets/images/covers/长寿面封面.jpg',
         difficulty: 'beginner',
         spiciness: 0,
         time: '30分钟 / 30 min',
@@ -2708,7 +2708,7 @@ const recipes = [
             zh: '婚宴或寿宴上的传统大盘菜，通常包含海鲜、肉类和蔬菜，象征家人团圆与和谐。每一口都寓意着喜庆和幸福。',
             en: 'A traditional large platter served at weddings or birthday banquets, usually featuring seafood, meat, and vegetables. It symbolizes family reunion, unity, and happiness, with every bite carrying festive blessings.'
         },
-        image: '全家福封面.jpg',
+        image: 'assets/images/covers/全家福封面.jpg',
         difficulty: 'advanced',
         spiciness: 1,
         time: '120分钟 / 120 min',
