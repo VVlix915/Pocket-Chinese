@@ -475,6 +475,89 @@ nav {
     font-size: 0.85rem;
 }
 
+/* 食材替代指南样式 */
+.substitution-list {
+    list-style: none;
+}
+
+.substitution-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.substitution-item:last-child {
+    border-bottom: none;
+}
+
+.substitution-header {
+    margin-bottom: 0.5rem;
+}
+
+.substitution-header .ingredient-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.substitution-content {
+    background: #f8f9fa;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.substitution-text {
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* 新的替代指南样式 */
+.substitution-guide {
+    background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
+    border: 2px solid #ffc107;
+}
+
+.substitution-guide h2 {
+    color: #856404;
+    border-bottom: 2px solid #ffc107;
+    padding-bottom: 0.5rem;
+}
+
+.substitution-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.substitution-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 5px solid #28a745;
+}
+
+.substitution-ingredient-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed #ddd;
+}
+
+.substitution-details {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.substitution-details strong,
+.substitution-details b {
+    color: #28a745;
+}
+
 .steps-list {
     counter-reset: step;
 }
