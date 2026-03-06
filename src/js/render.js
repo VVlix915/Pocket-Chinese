@@ -1,4 +1,5 @@
 import { recipes } from '../data/recipes.js';
+import { communityPosts } from '../data/community.js';
 import { getCurrentLang, getCurrentPage, getCurrentRecipeId, getCurrentCultureCategory, getCurrentScenario } from './state.js';
 import { t } from './utils.js';
 
@@ -20,6 +21,7 @@ export function render() {
                         <li><a href="#" onclick="navigateTo('scenarios'); return false;" class="${currentPage === 'scenarios' ? 'active' : ''}">${t('nav.scenarios')}</a></li>
                         <li><a href="#" onclick="navigateTo('recipes', null, null, null); return false;" class="${currentPage === 'recipes' ? 'active' : ''}">${t('nav.recipes')}</a></li>
                         <li><a href="#" onclick="navigateTo('culture'); return false;" class="${currentPage === 'culture' ? 'active' : ''}">${t('nav.culture')}</a></li>
+                        <li><a href="#" onclick="navigateTo('community'); return false;" class="${currentPage === 'community' ? 'active' : ''}">${t('nav.community')}</a></li>
                     </ul>
                     <div class="lang-switch">
                         <button class="lang-btn ${getCurrentLang() === 'zh' ? 'active' : ''}" data-lang="zh" onclick="setLanguage('zh')">中文</button>
@@ -44,6 +46,8 @@ export function render() {
         } else {
             content += renderCulturePage();
         }
+    } else if (currentPage === 'community') {
+        content += renderCommunityPage();
     }
 
     content += `
@@ -616,5 +620,89 @@ function renderCultureCategoryPage(category) {
                 </div>
             </div>
         </section>
+    `;
+}
+
+function getTimeAgo(timestamp) {
+    const now = new Date();
+    const postDate = new Date(timestamp);
+    const diffInMs = now - postDate;
+    const diffInDays = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
+    
+    if (diffInDays === 0) {
+        const diffInHours = Math.floor(diffInMs / (1000 * 60 * 60));
+        if (diffInHours === 0) {
+            const diffInMinutes = Math.floor(diffInMs / (1000 * 60));
+            return diffInMinutes < 1 ? (getCurrentLang() === 'zh' ? '刚刚' : 'Just now') : (getCurrentLang() === 'zh' ? `${diffInMinutes}分钟前` : `${diffInMinutes}m ago`);
+        }
+        return getCurrentLang() === 'zh' ? `${diffInHours}小时前` : `${diffInHours}h ago`;
+    } else if (diffInDays === 1) {
+        return getCurrentLang() === 'zh' ? '昨天' : 'Yesterday';
+    } else if (diffInDays < 7) {
+        return getCurrentLang() === 'zh' ? `${diffInDays}天前` : `${diffInDays}d ago`;
+    } else {
+        return postDate.toLocaleDateString();
+    }
+}
+
+function renderCommunityPage() {
+    return `
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">${t('community.title')}</h2>
+                <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">${t('community.subtitle')}</p>
+                
+                ${communityPosts.length === 0 ? `
+                    <div class="no-posts">
+                        <p>${t('community.noPosts')}</p>
+                    </div>
+                ` : `
+                    <div class="community-grid">
+                        ${communityPosts.map(post => renderCommunityPost(post)).join('')}
+                    </div>
+                `}
+            </div>
+        </section>
+    `;
+}
+
+function renderCommunityPost(post) {
+    const timeAgo = getTimeAgo(post.timestamp);
+    return `
+        <div class="community-post">
+            <div class="post-header">
+                <img src="${post.user.avatar}" alt="${post.user.name}" class="user-avatar">
+                <div class="user-info">
+                    <h4>${post.user.name}</h4>
+                    <span class="post-time">${timeAgo}</span>
+                </div>
+            </div>
+            <img src="${post.image}" alt="${post.caption[getCurrentLang()]}" class="post-image">
+            <div class="post-content">
+                <p class="post-caption">${post.caption[getCurrentLang()]}</p>
+                <div class="post-actions">
+                    <span class="action-button">
+                        <span>❤️</span>
+                        <span class="action-count">${post.likes}</span>
+                    </span>
+                    <span class="action-button">
+                        <span>💬</span>
+                        <span class="action-count">${post.comments.length}</span>
+                    </span>
+                </div>
+                ${post.comments.length > 0 ? `
+                    <div class="comments-section" style="display: block;">
+                        <div class="comments-list">
+                            ${post.comments.map(comment => `
+                                <div class="comment">
+                                    <span class="comment-user">${comment.user}:</span>
+                                    <span class="comment-text">${comment.text[getCurrentLang()]}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                ` : ''}
+            </div>
+        </div>
     `;
 }

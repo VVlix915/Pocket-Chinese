@@ -4,7 +4,8 @@ export const translations = {
             home: '首页',
             scenarios: '场景分类',
             recipes: '菜谱大全',
-            culture: '文化故事'
+            culture: '文化故事',
+            community: '用户分享'
         },
         hero: {
             title: '探索中华美食文化',
@@ -47,6 +48,16 @@ export const translations = {
             video: '视频教程',
             back: '返回列表'
         },
+        community: {
+            title: '用户分享社区',
+            subtitle: '分享您的美食作品，与大家交流心得',
+            shareButton: '分享我的作品',
+            uploadImage: '上传图片',
+            writeCaption: '写下您的分享...',
+            postButton: '发布',
+            noPosts: '暂无分享，快来发布第一条吧！',
+            comment: '评论'
+        },
         footer: {
             text: '© 2026 中华美食 | 连接中西饮食文化'
         }
@@ -56,7 +67,8 @@ export const translations = {
             home: 'Home',
             scenarios: 'Scenarios',
             recipes: 'Recipes',
-            culture: 'Culture'
+            culture: 'Culture',
+            community: 'Community'
         },
         hero: {
             title: 'Explore Chinese Cuisine',
@@ -98,6 +110,16 @@ export const translations = {
             substitution: 'Substitution',
             video: 'Video Tutorial',
             back: 'Back to List'
+        },
+        community: {
+            title: 'Community Sharing',
+            subtitle: 'Share your culinary creations and exchange cooking tips',
+            shareButton: 'Share My Creation',
+            uploadImage: 'Upload Image',
+            writeCaption: 'Write your caption...',
+            postButton: 'Post',
+            noPosts: 'No posts yet. Be the first to share!',
+            comment: 'Comment'
         },
         footer: {
             text: '© 2026 Chinese Cuisine | Bridging Eastern and Western Culinary Cultures'
