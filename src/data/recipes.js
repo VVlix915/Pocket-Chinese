@@ -1474,7 +1474,7 @@ export const recipes = [
         ],
         culture: {
             zh: '松鼠桂鱼是一道色香味形声俱佳的传统菜肴，以鱼身炸制后呈松鼠状，再浇上热糖醋卤汁，外酥里嫩、酸甜可口。鱼肉细嫩，刺少，入口鲜美，造型独特，糖醋汁淋上时会发出吱吱声，如松鼠欢鸣，极具观赏与食用的双重趣味。它不仅是一道美味的佳肴，更是春节餐桌上寓意丰盛与吉祥的重要象征。\n\n这道菜的故事可以追溯到清朝乾隆年间。相传乾隆皇帝六下江南，曾微服至苏州松鹤楼用餐，见店中供奉的鲤鱼活泼可爱，便想品尝。店主既不敢违命，又担心宰杀"神鱼"不妥，于是与厨师商议，将鲤鱼去骨剖花，炸成松鼠状，并淋上热卤端上桌。乾隆皇帝大悦，从此"松鼠鱼"的名声传开。民间后来为了方便食用并寓意吉祥，多改用肉质鲜嫩、刺少的鳜鱼（桂鱼），形成了今天的"松鼠桂鱼"。清代食谱《调鼎集》中已有类似做法的记载，显示这道菜在乾隆、嘉庆年间已经颇为成熟。20世纪末至今，松鼠桂鱼成为江苏十大经典名菜，并在全国烹饪比赛中屡获殊荣，逐渐成为国内外知名的江南名菜。\n\n在文化意义上，松鼠桂鱼常出现在春节等重要节日餐桌上，寓意"年年有余"，因为"鱼"与"余"同音，象征生活富足、年年盈余。它酸甜适口、色泽红亮、形态生动，同时也是家庭团聚的象征。一道松鼠桂鱼端上桌，不仅让人食欲大开，更承载着新年祈福与团圆的美好寓意。\n\n在日常生活中，松鼠桂鱼多作为家庭聚餐或朋友聚会的亮点菜肴，也常见于春节年夜饭中。不同地区的做法略有差异，北方糖醋鱼多用鲤鱼，南方则以桂鱼为主。无论选用哪种鱼，这道菜都以鲜嫩的鱼肉、酥脆的外皮和酸甜的糖醋味赢得人们的喜爱，是节庆餐桌上不可或缺的一道经典佳肴。',
-            en: 'Squirrel Mandarin Fish is a traditional dish that excels in color, aroma, taste, form, and sound. After frying, the fish takes on a squirrel shape, then is浇上 hot sweet and sour sauce, resulting in a crispy exterior and tender interior with a sweet and sour taste. The fish meat is delicate with few bones, fresh and delicious, and the unique shape, combined with the sizzling sound when the sweet and sour sauce is poured (like a squirrels chirp), creates both visual and culinary enjoyment. It is not only a delicious delicacy but also an important symbol of abundance and good fortune on the Spring Festival dining table.\n\nThe story of this dish dates back to the Qianlong period of the Qing Dynasty. Legend has it that Emperor Qianlong made six southern tours, and once visited the Songhelou Restaurant in Suzhou incognito. Seeing the lively carp offered for worship, he wanted to try it. The shopkeeper, fearing to disobey but worried about slaughtering the "sacred fish," consulted with the chef to remove the bones, score the fish, fry it into a squirrel shape, and serve it with hot sauce. Emperor Qianlong was delighted, and the "squirrel fish" became famous. Later, the common people switched to mandarin fish (gui yu) for easier eating and auspicious meaning, forming today\'s "Squirrel Mandarin Fish." The Qing Dynasty cookbook "Tiao Ding Ji" already records similar methods, showing the dish was quite mature during the Qianlong and Jiaqing periods. Since the late 20th century, Squirrel Mandarin Fish has become one of the ten classic dishes of Jiangsu, won numerous awards in national cooking competitions, and gradually become a well-known Jiangnan dish at home and abroad.\n\nIn cultural significance, Squirrel Mandarin Fish often appears on important festival tables like Spring Festival, symbolizing "surplus every year" because "鱼" (fish) is homophonous with "余" (surplus) in Chinese, representing a富足 life with surplus year after year. Its sweet and sour taste, bright red color, and lively form also symbolize family reunion. When a Squirrel Mandarin Fish is served, it not only stimulates the appetite but also carries the beautiful meaning of New Year blessings and reunion.\n\nIn daily life, Squirrel Mandarin Fish is often a highlight dish at family meals or friend gatherings, and frequently appears in Spring Festival New Year\'s Eve dinners. Practices vary slightly by region—northern sweet and sour fish mostly uses carp, while southern versions primarily use mandarin fish. Regardless of which fish is used, this dish wins people\'s love with its tender fish meat, crispy exterior, and sweet and sour flavor, making it an indispensable classic dish on festive tables.'
+            en: 'Squirrel Mandarin Fish is a traditional dish that excels in color, aroma, taste, form, and sound. After frying, the fish takes on a squirrel shape, then is topped with hot sweet and sour sauce, resulting in a crispy exterior and tender interior with a sweet and sour taste. The fish meat is delicate with few bones, fresh and delicious, and the unique shape, combined with the sizzling sound when the sweet and sour sauce is poured (like a squirrels chirp), creates both visual and culinary enjoyment. It is not only a delicious delicacy but also an important symbol of abundance and good fortune on the Spring Festival dining table.\n\nThe story of this dish dates back to the Qianlong period of the Qing Dynasty. Legend has it that Emperor Qianlong made six southern tours, and once visited the Songhelou Restaurant in Suzhou incognito. Seeing the lively carp offered for worship, he wanted to try it. The shopkeeper, fearing to disobey but worried about slaughtering the "sacred fish," consulted with the chef to remove the bones, score the fish, fry it into a squirrel shape, and serve it with hot sauce. Emperor Qianlong was delighted, and the "squirrel fish" became famous. Later, the common people switched to mandarin fish (gui yu) for easier eating and auspicious meaning, forming today\'s "Squirrel Mandarin Fish." The Qing Dynasty cookbook "Tiao Ding Ji" already records similar methods, showing the dish was quite mature during the Qianlong and Jiaqing periods. Since the late 20th century, Squirrel Mandarin Fish has become one of the ten classic dishes of Jiangsu, won numerous awards in national cooking competitions, and gradually become a well-known Jiangnan dish at home and abroad.\n\nIn cultural significance, Squirrel Mandarin Fish often appears on important festival tables like Spring Festival, symbolizing "surplus every year" because "鱼" (fish) is homophonous with "余" (surplus) in Chinese, representing a prosperous life with surplus year after year. Its sweet and sour taste, bright red color, and lively form also symbolize family reunion. When a Squirrel Mandarin Fish is served, it not only stimulates the appetite but also carries the beautiful meaning of New Year blessings and reunion.\n\nIn daily life, Squirrel Mandarin Fish is often a highlight dish at family meals or friend gatherings, and frequently appears in Spring Festival New Year\'s Eve dinners. Practices vary slightly by region—northern sweet and sour fish mostly uses carp, while southern versions primarily use mandarin fish. Regardless of which fish is used, this dish wins people\'s love with its tender fish meat, crispy exterior, and sweet and sour flavor, making it an indispensable classic dish on festive tables.'
         }
     },
     {
@@ -1516,7 +1516,7 @@ export const recipes = [
             },
             {
                 name: { zh: '水', en: 'Water' },
-                amount: '适量 /适量',
+                amount: '适量 / as needed',
                 substitution: null
             }
         ],
@@ -2078,7 +2078,7 @@ export const recipes = [
             },
             {
                 name: { zh: '水', en: 'Water' },
-                amount: '适量 /适量',
+                amount: '适量 / as needed',
                 substitution: null
             }
         ],
@@ -2157,7 +2157,7 @@ export const recipes = [
             },
             {
                 name: { zh: '水', en: 'Water' },
-                amount: '适量 /适量',
+                amount: '适量 / as needed',
                 substitution: null
             }
         ],
@@ -2249,7 +2249,7 @@ export const recipes = [
             },
             {
                 name: { zh: '水', en: 'Water' },
-                amount: '适量 /适量',
+                amount: '适量 / as needed',
                 substitution: null
             }
         ],
@@ -2331,7 +2331,7 @@ export const recipes = [
             },
             {
                 name: { zh: '水', en: 'Water' },
-                amount: '适量 /适量',
+                amount: '适量 / as needed',
                 substitution: null
             }
         ],
@@ -2418,12 +2418,12 @@ export const recipes = [
             },
             {
                 name: { zh: '葱花', en: 'Green onions' },
-                amount: '适量 /适量',
+                amount: '适量 / as needed',
                 substitution: null
             },
             {
                 name: { zh: '水', en: 'Water' },
-                amount: '适量 /适量',
+                amount: '适量 / as needed',
                 substitution: null
             }
         ],
@@ -2530,17 +2530,17 @@ export const recipes = [
             },
             {
                 name: { zh: '姜', en: 'Ginger' },
-                amount: '适量 /适量',
+                amount: '适量 / as needed',
                 substitution: null
             },
             {
                 name: { zh: '蒜', en: 'Garlic' },
-                amount: '适量 /适量',
+                amount: '适量 / as needed',
                 substitution: null
             },
             {
                 name: { zh: '葱', en: 'Green onions' },
-                amount: '适量 /适量',
+                amount: '适量 / as needed',
                 substitution: null
             }
         ],
